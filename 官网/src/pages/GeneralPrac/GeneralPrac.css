@@ -1,0 +1,90 @@
+.general-prac > section {
+  position: relative; }
+  .general-prac > section > div {
+    position: absolute; }
+    .general-prac > section > div p {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .general-prac > section > div p:nth-of-type(1) {
+      font-size: 36px;
+      margin-bottom: 30px; }
+
+.general-prac > section:nth-of-type(2n+1) > div {
+  top: 35%;
+  left: 10%; }
+
+.general-prac > section:nth-of-type(2n) > div {
+  top: 35%;
+  right: 10%; }
+
+.general-prac > section:nth-of-type(5) {
+  text-align: center; }
+  .general-prac > section:nth-of-type(5) > div {
+    width: 500px;
+    top: 10%;
+    left: 50%;
+    margin-left: -250px;
+    margin-right: -250px; }
+
+@media screen and (max-width: 1350px) {
+  .general-prac > section > div p {
+    font-size: 14px;
+    margin-bottom: 8px; }
+  .general-prac > section > div p:nth-of-type(1) {
+    font-size: 32px;
+    margin-bottom: 25px; }
+  .general-prac > section:nth-of-type(2n+1) > div {
+    top: 30%;
+    left: 5%; }
+  .general-prac > section:nth-of-type(2n) > div {
+    top: 30%;
+    right: 5%; }
+  .general-prac > section:nth-of-type(5) {
+    text-align: center; }
+    .general-prac > section:nth-of-type(5) > div {
+      width: 500px;
+      top: 10%;
+      left: 50%;
+      margin-left: -250px;
+      margin-right: -250px; } }
+
+@media screen and (max-width: 1000px) {
+  .general-prac > section > div p {
+    font-size: 14px;
+    margin-bottom: 4px; }
+  .general-prac > section > div p:nth-of-type(1) {
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .general-prac > section:nth-of-type(2n+1) > div {
+    top: 25%;
+    left: 5%; }
+  .general-prac > section:nth-of-type(2n) > div {
+    top: 25%;
+    right: 5%; }
+  .general-prac > section:nth-of-type(5) {
+    text-align: center; }
+    .general-prac > section:nth-of-type(5) > div {
+      width: 500px;
+      top: 10%;
+      left: 50%;
+      margin-left: -250px;
+      margin-right: -250px; } }
+
+@media screen and (max-width: 760px) {
+  .general-prac {
+    margin-top: 20px;
+    text-align: center; }
+    .general-prac > section {
+      position: inherit;
+      margin-bottom: 40px; }
+      .general-prac > section > div {
+        position: inherit; }
+        .general-prac > section > div p {
+          font-size: 14px;
+          margin-bottom: 4px; }
+        .general-prac > section > div p:nth-of-type(1) {
+          font-size: 24px;
+          margin-bottom: 12px; }
+    .general-prac > section:nth-of-type(5) > div {
+      width: inherit;
+      margin: 0; } }

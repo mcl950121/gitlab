@@ -1,0 +1,304 @@
+.user-drug-app {
+
+  section {
+    position: relative;
+    text-align: center;
+
+    .user-para {
+      position: absolute;
+    }
+  }
+
+  section:nth-of-type(1) {
+    text-align: center;
+
+    .user-para {
+      width: 600px;
+      top: 15%;
+      left: 50%;
+      margin-left: -300px;
+
+      p:nth-of-type(1) {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  section:nth-of-type(2) {
+    text-align: left;
+
+    .user-para {
+      top: 35%;
+      left: 10%;
+
+      p {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  section:nth-of-type(3) {
+    text-align: right;
+
+    .user-para {
+      top: 35%;
+      right: 10%;
+
+      p {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  section:nth-of-type(4) {
+    text-align: left;
+
+    .user-para {
+      top: 35%;
+      left: 10%;
+
+      p {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  section:nth-of-type(5) {
+    text-align: center;
+    position: inherit;
+
+    .user-para {
+      position: inherit;
+      width: 400px;
+      margin: 0 auto;
+
+      p:nth-of-type(1) {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    & > img {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    & > p {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .user-drug-app {
+
+    section:nth-of-type(1) {
+
+      .user-para {
+        width: 400px;
+        top: 15%;
+        left: 50%;
+        margin-left: -200px;
+
+        p:nth-of-type(1) {
+          font-size: 30px;
+          margin-bottom: 18px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    section:nth-of-type(2) {
+      text-align: left;
+
+      .user-para {
+        top: 35%;
+        left: 5%;
+
+        p {
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    section:nth-of-type(3) {
+      text-align: right;
+
+      .user-para {
+        top: 35%;
+        right: 10%;
+
+        p {
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    section:nth-of-type(4) {
+      text-align: left;
+
+      .user-para {
+        top: 35%;
+        left: 5%;
+
+        p {
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    section:nth-of-type(5) {
+      text-align: center;
+      position: inherit;
+
+      .user-para {
+        position: inherit;
+        width: 400px;
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      & > img {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      & > p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .user-drug-app {
+
+    section {
+      position: inherit;
+      margin-top: 20px;
+
+
+      .user-para {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+        position: inherit;
+
+      }
+    }
+
+    section:nth-of-type(1) {
+
+      .user-para {
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    section:nth-of-type(2) {
+
+      .user-para {
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    section:nth-of-type(3) {
+
+      .user-para {
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    section:nth-of-type(4) {
+
+      .user-para {
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    section:nth-of-type(5) {
+
+      .user-para {
+        width: 400px;
+        margin: 0 auto;
+
+        p:nth-of-type(1) {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+
+      & > img {
+        width: 120px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      & > p {
+        font-size: 20px;
+      }
+    }
+
+  }
+}
