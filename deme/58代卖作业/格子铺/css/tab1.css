@@ -1,0 +1,15 @@
+
+
+.main_right_title{width:795px;color:#636363;font-weight: bold;height: 20px;}
+.right1{width:251px;height:332px;border:1px solid #eee;overflow-y: scroll;float: left;margin-right: 12px;}
+#right1-1{margin-top: 15px;width:15px;height: 15px;margin-left: 10px;float: left;}
+.right1 span{color:#E21210;margin-top:15px;font-weight:bold;float:left;width:200px;height: 20px;margin-left: 10px;display: block;}
+.right3{width:251px;height:332px;border:1px solid #eee;overflow-y: scroll;float: left;margin-right: 12px;}
+.right3 span{margin-top:15px;float:left;width:200px;height: 20px;margin-left: 10px;display: block;}
+.right2{width:251px;height:332px;border:1px solid #eee;overflow-y: scroll;float: left;margin-right: 12px;}
+.right2 span{color:#E21210;margin-top:15px;float:left;width:200px;height: 20px;margin-left: 10px;display: block;}
+.right_bottom{width: 795px;margin-left: 20px;float: left;text-align: center;}
+.tianjia{width: 100px;background: #E21210;color:#fff;text-align: center;height: 30px;line-height: 30px;margin: 10px auto;;}
+.shouhou{color:red;}
+
+

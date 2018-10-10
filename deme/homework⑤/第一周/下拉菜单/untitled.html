@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js第一节课</title>
+<script src="js/js.js">
+</script>
+<style type="text/css">
+#div1,#div2{width:100px;height:20px;}
+span,a{display:block}
+#div1{position: relative;}
+span{width: 100px; height: 20px; border: 1px solid #000; z-index: 2;background: white;background-color:#0F0}
+#div2{top: 20px; z-index: 1;background: white; border: 1px solid #000; border-top-color: #666; width: 300px; height: 150px; display: none;}
+span,#div2{position: absolute;}
+s{width:0px;height:0px;border:4px solid #ccc;display:inline-block;margin-left:10px;border-color:#f00 transparent #000;border-bottom:none;transition:transform .2s}
+<!--s:hover{trabsform:rotate(180deg);}-->
+</style>
+</head>
+
+<body>
+<div id="div1">
+	<span id="span1">星期<s id="s1"></s></span>
+	<div id="div2">
+    	<a href="#">星期一</a>
+        <a href="#">星期二</a>
+        <a href="#">星期三</a>
+        <a href="#">星期四</a>
+        <a href="#">星期五</a>
+        <a href="#">星期六</a>
+        <a href="#">星期日</a>
+    </div>
+</div>
+</body>
+</html>

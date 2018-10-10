@@ -1,0 +1,83 @@
+注册:需求
+用户名：汉字或英文字母1-6位
+密码：英文字母和数字组合6-14位
+确认密码：两次密码必须相同
+手机号：11位数字
+注册成功之后跳转到登录页面
+注册接口：
+url:http://10.115.12.226/project/data/register.php
+type: post
+data:{"user_name":user_name,"user_pass_word":user_pass_word,"user_phone":user_phone}
+success:回调函数{msg:‘success’}
+					{msg: "err", reason: "该手机号已经被注册"}
+登录：需求
+用户名验证：汉字或英文字母1-6位
+密码验证：英文字母和数字组合6-14位
+勾选自自动登录后，15天内自动登录
+登录：接口
+url: http://10.115.12.226/project/data/login.php
+type: "post",
+data: {"user_name": user_name, "user_pass_word": user_pass_word}
+
+success:登陆成功：
+{"user_name":登录的用户名, "user_pass_word": 登录的密码,”user_phone”:137xxxxxxxxxx}
+	登陆失败：’’(空字符串)
+商品列表需求：进入商品主页展示5条商品
+				点击加载更多按钮继续加载 5条商品
+商品列表接口：
+url:http://10.115.12.226/project/data/dish_getbypage.php
+type:post
+data:{'start':start}
+		start=0   代表加载5条记录
+		start=5   代表加载10条记录
+success:
+[{"did":"1","name":"x,"img_sm":"7c89","price":"36.00"},{"did":"2","name":"u3011","img_sm":"p2679.jpg","material":"u4e73","price":"16.50"},…]
+
+更改资料（用户名）需求：
+用户进入修改用户名页面，用户名自动显示在输入框中。
+点击确认修改时，修改。
+更改用户名接口：
+http://10.115.12.226/project/data/user_update_name.php
+data={'user_name'xxx,'user_phone':135xxx'};
+success:’success’
+
+更改密码需求：
+要求输入原密码，并将原密码进行验证。
+输入新密码，新密码验证不能少于六位。
+点击修改。进行修改。
+更改密码接口：
+url="http://10.115.12.226/project/data/user_update_pwd.php";
+data={'user_pass_word':xxx,'user_phone':13xxx};
+success:’success’
+
+关键字查找：
+需求：输入菜品的部分关键字，就可以查到这个菜。并显示出来这道菜。
+http://10.115.12.226/project/data/dish_getbykw.php
+data:{'kw':kwd},
+success:[{"did":"1","name":"xxxx","price":"36.00"}]
+
+菜品详情需求：
+点击菜品列表的某一个菜，跳转到详情页面。
+在详情页面展示菜品的全部信息。
+菜品详情接口：
+http://10.115.12.226/project/data/dish_getbyid.php
+data:{'id':did},
+success:{"did":"1","name":"….","price":"36.00","img_lg":"p0281-l.jpg","material":"…."}
+
+菜品订单接口：
+url :http://10.115.12.226/project/data/order_add.php
+data: {				"user_name": xxx,订餐人称呼
+					"phone":xxxx,订餐人手机号
+					"sex":'1',1代表男 2代表女
+					"addr_user":xxx,订餐人的地址。
+					"did":xxx	这道菜的 did
+				}
+
+success: 订餐成功[{"msg":"succ","did":17}]
+		订餐失败[{"msg":"err","reason":" 订单信息不完整"}]
+
+查看用户中心（显示已定成功的商品）：
+
+url: "http://10.115.12.226/project/data/order_getbyphone.php",
+data: {"phone":'当前登录者的电话号码'}
+success:[{"oid":"787","user_name":"xxx","order_time":"1468757561000","img_sm":"p2679.jpg","did":"2"},{"oid":"1953","user_name":"xxx","order_time":"1468825920000","img_sm":"p2

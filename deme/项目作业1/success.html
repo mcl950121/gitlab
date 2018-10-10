@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/success.css" type="text/css" />
+		<script src="js/jquery-1.11.2.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/success.js"></script>
+	</head>
+	<body>
+		<div class="huabu">
+			<div class="tit">
+				<div class="ret"><a href="javascript:history.go(-1);"><img src="images/ret.png" style="width: 1.1rem;height:1.1rem;"></a></div>
+				<font>提交订单</font>
+			</div>
+			<div class="edit">
+				<font>姓名：</font>
+				<input type="text" class="tex" id="suc_name" />
+				<font>联系电话：</font>
+				<input type="text" class="tex" id="suc_phone" />
+				<font>送餐地址：</font>
+				<input type="text" class="tex" id="suc_addr" />
+				<font>性别：</font>
+				<div class="xb">
+					<input type="radio" name="xb" class="xbb" id="nan"/>男
+					<input type="radio" name="xb" class="xbb" id="nv"/>女
+				</div>
+				<input type="button" class="refer" value="提交订单">
+			</div>
+			<div class="bottom">
+				<ul>
+					<li id="gwc">
+						<img src="images/p1.png" style="width: 1rem;height:1rem;margin-left:2.1rem" />
+						<font>购物车</font>
+					</li>
+					<li id="yhzx">
+						<img src="images/p2.png"  style="width: 1rem;height:1rem;margin-left:2.1rem"/>
+						<font>用户中心</font>
+					</li>
+					<li id="set">
+						<img src="images/p3.png" style="width: 1rem;height:1rem;margin-left:2.1rem" />
+						<font>设置</font>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+	<script>
+		window.onresize=window.onload=function(){
+			document.documentElement.style.fontSize=innerWidth/16+'px';
+		}
+	</script>
+</html>

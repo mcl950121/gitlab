@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			var str ='java'
+//			if(str){
+//				alert(3*'3')
+//			}
+//			var str = 'px123'
+//			alert(Boolean(str))
+//			alert(typeof Number(str))
+//			alert(parseInt(str))
+
+//			var arr = new Array(1,2,3,4);
+////			var str = arr.join('-');
+//			alert(arr.join('+'))
+//			alert(Array.isArray(str.split(''))) //isArray判断是不是数组  返回true
+//			var arr2 = [5,6];
+//			var arr3 = arr.concat(arr2);//var arr3 = arr.concat(5) 也可以放元素
+//			console.log(arr+arr2) //1,2,3,45,6 string
+//			console.log(arr3) //1,2,3,4,5,6
+			
+ //			var arr=[1,2,3,4]//数组是引用类型
+//			var arr1=arr //复制的是一个指针
+//			arr1.pop()
+//			console.log(arr,arr1)
+//			
+//			var n=10 //基本类型
+//			var n1=n
+//			n-=5
+//			console.log(n,n1)
+			
+			//关联数组
+			
+//			var arr=[]
+//			arr['name']='tom'
+//			arr['age']=18
+//			arr['age']=21//关联数组没有长度。key的值不能相同
+////			console.log(arr['age'])
+//			for(var k in arr){
+//				console.log(arr[k])
+//			}
+			
+			//迭代数组
+			
+//			var arr = [1,2,3,4,5,6,7,88,9]
+//every()	对数组中的每一项运行给定函数，如果该函数对每一项都返回 true，则返回 true。
+//			var bool = arr.every(function(item, index, array){
+//				return (item >= 1);
+//			})
+//			alert(bool)
+//some()	对数组中的每一项运行给定函数，如果该函数对任一项返回 true，则返回 true。
+//			var bool = arr.some(function(item, index, array){
+//				return (item > 2);
+//			}); 
+//			alert(bool)
+//filter()  将满足条件的项item返回，并组成新数组			
+//			var bool = arr.filter(function(item, index, array){
+//				return (item > 2);
+//			});
+//			alert(bool)
+//map()		将数组的每一个元素进行处理，并返回。
+//			var bool = arr.map(function(item, index, array){
+//				return (item*10);
+//			});
+//			alert(bool)
+//			alert(arr)//原数组不受影响
+//forEach()
+//			arr.forEach(function(item, index, array){
+//				console.log(item);
+//			})
+
+
+//函数 function
+//fn();
+//			function fn (){
+//				alert(0)
+//			}
+////			var fn= function (){alert(111)}
+////			var fn= function (){alert(222)}
+//			var fn=new Function('a','alert(a)') //函数的3种申明方式
+//			fn(3)
+			
+//			(function(a){alert(a)})(5);   //匿名函数自调，定义完立即执行
+//			function fn () {
+//				console.log(arguments[0]) //arguments 类数组对象，但不是一个数组
+//			}
+//			fn(2,3);
+
+//			function fn () {
+//				if(arguments.length==1){
+//					return arguments[0]*arguments[0];
+//				}if(arguments.length==2){
+//					return arguments[0]+arguments[1];
+//				}
+//			}
+//			alert(fn(2,3))
+
+
+//闭包	1.函数嵌套  2.内部函数使用外部函数的变量  3.外部的函数将内部的函数 作为返回值 返回
+//			function fn1(){
+//				var n=0;
+//				return function fn2(){
+//					console.log(n)
+//				}
+//			}
+//			var f = fn1();
+//			f()
+
+//Object
+// 创建对象的三种方法：
+//			var obj={
+//				name:'ma',
+//				age:21,
+//				sayName:function(){
+//					alert(this.name);
+//				}
+//			}
+//			console.log(obj);
+//			obj.sayName();
+			
+//			var obj = new Object();
+//			obj.name='ma';
+//			obj.age=21;
+//			obj.sayName=function(){
+//				alert(this.name);
+//			}
+//			console.log(obj);
+//			obj.sayName();
+
+			//构造函数方法创建对象
+//			function Person(n,a){
+//				this.name=n;
+//				this.age=a;
+//				this.sayName=function(){
+//					alert(this.name);
+//				}
+//			}
+//			var person1=new Person('liang',22);
+//			var person2=new Person('ma',21);
+//			console.log(person1);
+//			console.log(person2);
+//			person1.sayName();
+			
+//继承
+//			var mayun={
+//				money:1000000000
+//			}
+//通过构造函数的原型  = 一个要继承的对象实例
+//			function Mayun(){//B对象
+//				this.money=100000000;
+//			}
+//			Mayun.prototype.color='yellow';
+//			var liang = new Mayun();
+//			console.log(liang);
+//			
+//			
+//			function Student(name){//A对象
+//				this.name=name;
+//			}
+//			Student.prototype=liang //A对象继承B对象  让A对象的构造函数的原型对象等于B对象的实例。
+////			Student.prototype.color="yellow";
+////			Student.prototype=mayun;
+//			var ma= new Student('ma');
+//			var cheng= new Student('cheng');
+//			console.log(ma);
+//			console.log(cheng);
+//			alert(ma.color)
+
+//混合式继承。通过原型和call方法实现
+			function MayunFther(){
+				
+			}
+			MayunFther.prototype.color='yellow';		
+
+			function Mayun(){
+				this.money=100000000;
+			}		
+			Mayun.prototype=MayunFther.prototype;//原型链，例：a,b,c三个对象，a=b,b=c,（b原型 继承 a原型,c原型 继承 b原型）abc之间构成了一个原型链
+			
+			function Student(name){
+				this.name=name;
+				console.log(this);//this 构造函数本身（student）
+				Mayun.call(this);//改变thi指向作用域，这个this指向Mayun,就是Mayun去执行student这个构造函数
+			}
+			Student.prototype=Mayun.prototype
+			
+			var ma= new Student('ma');
+			console.log(ma.color);//call方法 只能继承父构造函数的自身属性，继承不了父构造函数的原型的属性和方法
+			
+
+		</script>
+
+	</body>
+</html>

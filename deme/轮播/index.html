@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS carousel</title>
+		<link href="ui-bootstrap/bootstrap.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div ng-controller="CarouselDemoCtrl">
+			<div style="height: 305px">
+				<carousel interval="myInterval" no-wrap="noWrapSlides">
+					<slide ng-repeat="slide in slides" active="slide.active"> 
+						<img ng-src="{{slide.img}}" style="margin:auto;">
+						<div class="carousel-caption">
+							<p>{{slide.text}}</p>
+						</div>
+					</slide>
+				</carousel>
+			</div>
+		</div>
+		<script src="ui-bootstrap/angular.js"></script>
+		<script src="ui-bootstrap/angular-animate.js"></script>
+		<script src="ui-bootstrap/ui-bootstrap.js"></script>
+		<script src="ui-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script>
+			angular.module('myApp', ['ui.bootstrap', 'ngAnimate']).controller('CarouselDemoCtrl', function($scope) {
+				$scope.myInterval = 2000;
+				$scope.noWrapSlides = false;
+				var slides = $scope.slides = [];
+				$scope.addSlide = function() {
+					var newWidth = 600 + slides.length + 1;
+					slides.push({
+						img: 'img/11.jpg',
+						//text: 'Chocola & Vanilla'
+					});
+					slides.push({
+						img: 'img/22.jpg',
+						//text: 'Chocola & Vanilla'
+					});
+					slides.push({
+						img: 'img/33.jpg',
+						//text: 'Chocola & Vanilla'
+					});
+					slides.push({
+						img: 'img/44.jpg',
+						//text: 'Chocola & Vanilla'
+					});
+				};
+				$scope.addSlide();
+			});
+		</script>
+	</body>
+
+</html>

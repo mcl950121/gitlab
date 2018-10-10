@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    var str='7520752175227523122';
+    var arr=[];
+    var str2='';
+
+    for(var i = 0;i<str.length;i++){
+      var len = i;
+    };
+    len +=1;
+    console.log(len);
+
+    var num = len/4;
+    console.log(num);
+
+    for(var i = 0;i<num;i++){
+
+      var str1 = str.substring(0,4);
+      var str = str.substring(4);
+
+      str2 += str1 + ',';
+
+      console.log(str1);
+    };
+    console.log(str2);
+
+    arr = str2.split(',');
+    arr.pop();
+    console.log(arr);
+  </script>
+</html>

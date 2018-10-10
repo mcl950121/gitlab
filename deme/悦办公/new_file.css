@@ -1,0 +1,341 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	color: #5E5E5E;
+}
+a{
+ text-decoration: none;	
+ color: #5E5E5E;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+}
+span{
+	display: block;
+}
+i,b,em{
+	font-weight: normal;
+	font-style:normal;
+	display: block;
+}
+a:hover{
+	text-decoration: underline;
+}
+table{
+	margin: 0;
+	padding: 0;
+}
+#_top{
+	width: 1004px;
+	height: 181px;
+	margin: 0 auto;
+	background: url(images/top.jpg);
+}
+.top-head{
+	width: 1004px;
+	height: 100px;
+}
+.top-head img{
+	padding-top: 15px;
+	padding-left: 35px;
+}
+.Scang{
+	width: 281px;
+	height: 100px;
+	float: right;
+}
+.Scang ul {
+	width: 200px;
+	height: 12px;
+	padding-left:40px;
+	padding-top: 37px;
+}
+.Scang ul li{
+	width: 63px;
+	height: 12px;
+	float: left;
+	text-align: center;
+	line-height: 12px;
+	border-left: 1px solid #2f2f2f;
+}
+.Scang ul li a{
+	color: #2f2f2f;
+}
+.Scang span{
+	width: 230px;
+	line-height: 18px;
+	height:18px;
+	padding-top:15px;
+}
+.Scang span i{
+	width: 18px;
+	height: 18px;
+	margin-right:8px;
+	float: left;
+	background: url(images/购物车1_09.png);
+}
+.Scang span a{
+	display: block;
+	float: right;
+}
+.Scang span b{
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	float: right;
+	background: url(images/购物车1_11.png);
+}
+.Scang2{
+	width: 300px;
+	height: 100px;
+	margin-right:60px;
+	float: right;
+}
+.Scang2 span a{
+	cursor: pointer;
+}
+
+#nav{
+	width: 953px;
+	height: 44px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#nav .ul1{
+	width: 700px;
+	height: 20px;
+	padding-top:13px;
+	float: left;
+	overflow: hidden;
+}
+#nav .ul1 li{
+	float: left;
+	margin-left: 38px;
+}
+#nav .ul1 li a{
+	font-size: 13px;
+	color: white;
+}
+#nav .ul1 li i{
+	width: 11px;
+	height: 6px;
+	float: right;
+	margin-top: 5px;
+	margin-left:5px;
+	background: url(images/箭头.jpg);
+}
+#nav .ul2{
+	width: 234px;
+	height: 20px;
+	padding-top:13px;
+	float: right;
+	overflow: hidden;
+}
+#nav .ul2 li{
+	float: left;
+	margin-left: 50px;
+}
+#nav .ul2 li a{
+	font-size: 13px;
+	color: white;
+}
+#top-2head{
+	width: 953px;
+	height: 35px;
+	line-height:35px;
+	margin: 0 auto;
+}
+#top-2head input[type=button]{
+	width: 46px;
+	height: 19px;
+    border: 1px solid transparent;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-right:30px;
+	background:url(images/购物车1_17.png) ;
+}
+#top-2head a{
+	margin-left: 20px;
+}
+#nav_lan{
+	width: 952px;
+	height: 37px;
+	border: 1px solid #ccc8c9;
+	margin: 0 auto;
+	box-shadow:0px 2px 3px  #888888 ;
+	margin-top:11px;
+}
+#nav_lan span{
+	width: 195px;
+	height: 11px;
+	line-height: 11px;
+	padding-left: 10px;
+	margin-left: 14px;
+	margin-top: 13px;
+	border-left: 4px solid #c50000;
+}
+#nav_lan2{
+	width: 952px;
+	height: 40px;
+	border-bottom: 1px solid #ccc8c9;
+	margin: 0 auto;
+	line-height:43px ;
+}
+#nav_lan2 i{
+	width: 21px;
+	height: 19px;
+	float:left;
+	margin-top:10px;
+	background: url(images/购物车1_09.png);
+}
+#shang_P{
+	width: 952px;
+	margin: 0 auto;
+	margin-top: 28px;
+}
+#nav_lan3{
+	width: 952px;
+	height: 40px;
+	border-bottom: 1px solid #ccc8c9;
+	margin: 0 auto;
+	line-height:43px ;
+}
+#nav_lan3 i{
+	width: 16px;
+	height: 19px;
+	float:left;
+	margin-top:10px;
+	background:url(images/购物车1_25.png);
+}
+.Bdan1{
+	width: 952px;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+}
+.Bdan1 .shan1{
+	width: 952px;
+	height: 34px;
+	background:#f5f5f5;
+	line-height: 34px;
+	font-size: 13px;
+	font-weight: 400;
+	border-bottom: 1px solid #DEDEDE;
+}
+.i{
+	display: block;
+	width: 1px;
+	color:red;
+}
+#main{
+	width:954px;
+	margin: 0 auto;
+	}
+#main1{
+	width:954px;
+	height:150px;
+	border:1px solid #cccccc;
+	border-top:4px solid #c60000;
+	margin-bottom:1px;
+	}
+#main1 div{
+	float:left;
+	}
+#main1-1{
+	width:169px;
+    height:121px;
+	border-right:1px solid #ececec;
+	line-height:18px;
+	}
+#main1-1 p{
+	font-size:12px;
+	}
+#main1-1 p b{
+	font-size:14px;
+	}
+#main1-top{
+	width:131px;
+	height:70px;
+	border-bottom:1px solid #ececec;
+	margin-left:14px;
+	}
+#main1-top-right img{
+	margin:9px 0 0 14px;
+	}
+#main1-top-left{
+	width:60px;
+	height:49px;
+	}
+#main1-bottom{
+	width:131px;
+	height:62px;
+	margin-left:14px;
+	}
+#main1-bottom-right img{
+	margin:3px 0 0 14px;
+	}
+#main1 dt{
+	margin-left:40px;
+	color:#c10100;
+	}
+#main1 img{
+	margin-right:9px;
+	}
+#main1-2{
+	width:170px;
+    height:121px;
+	margin:0 0 0 20px;
+	line-height:25px;
+	border-right:1px solid #ececec;
+    }
+#main1-3{
+	width:170px;
+    height:121px;
+	line-height:25px;
+	margin:0 0 0 20px;
+	border-right:1px solid #ececec;
+    }
+#main1-4{
+	width:170px;
+    height:121px;
+	line-height:25px;
+	margin:0 0 0 20px;
+	border-right:1px solid #ececec;
+    }
+#main1-5{
+	width:164px;
+    height:121px;
+	line-height:25px;
+	margin:0 0 0 20px;
+    }
+#main2{
+	width:954px;
+	height:35px;
+	border:1px solid #cecece;
+	border-bottom-left-radius:4px;
+	border-top:4px solid #e4e4e4;
+	line-height:4px;
+	background:#fafafa;
+	}
+#main2 ul {
+	margin-left:200px;
+	}
+#main2 ul li{
+	float:left;
+	}
+#main2 ul li b{
+	margin:0 12px;
+	}
+
+
+
+
+
+
+
+
+
+

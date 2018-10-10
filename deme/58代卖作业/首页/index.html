@@ -1,0 +1,647 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{padding:0; margin:0 auto;}
+body{width:100%;font-family:"微软雅黑";font-size:12px;font-style:normal;}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+#header{width:100%; height:35px; background:#f6f6f6; font-size:12px;font-family:"微软雅黑"; border-bottom:1px solid #e5e5e5;}
+.top{width:1000px; height:35px; margin:0 auto; position:relative;}
+.top>img{width:15px; height:15px; margin-top:10px;float:left;}
+.top span{line-height:35px; color:#676767; float:left; margin-left:10px;}
+#our{margin-left:350px;float:left; }
+#our span{width:130px; height:35px;line-height:35px; color:#676767;float:left;}
+#our img{width:25px; height:25px; margin-top:5px; margin-left:10px;float:left;position:absolute;}
+#thr{line-height:35px; color:#676767;left:620px;position:absolute;}
+#thr s{width:0px; height:0px; border:4px solid #ccc; display:inline-block; margin-left:10px;border-color:#000 transparent #000; border-bottom:none;transition:transform .2s; position:absolute; top:13px;}
+.sanjiao{ width:25px; height:19px;  position:absolute; z-index:888; top:3px; left:55px; padding-top:13px; border:1px solid #ccc;border-bottom:0; background:#FFF; cursor:pointer;}
+
+
+
+
+#con{top:35px; left:600px;background:white;border:1px solid #ccc;width:100px;height:90px;position:absolute;display:none; z-index:80;}
+#con ul li{width:100px; height:30px; position:relative; display:block;}
+#con ul li img{width:13px; height:13px;float:left; top:5px;}
+#con ul li h{float:right; margin-right:20px; margin-top:10px;}
+#con ul li a{color:#999; text-decoration:none;}
+#con ul li a:hover{background:#999; color:#fff; display:block; width:100px; height:30px;}
+.li1{background:#999; color:#fff;}
+.mon{float:right; line-height:35px;color:#676767;position:absolute;left:710px;}
+.mon f{color:#F00;}
+.mon a{color:#676767; text-decoration:none;}
+.mon a:hover{color:#00F;}
+
+.logo{width:1000px; height:100px; margin: 0 auto; clear:both;}
+.mou{width:320px; height:100px; float:left;}
+.mou img{width:209px; height:75px; margin-top:5px; float:left;}
+.mou e{width:2px; height:40px; background:#666;display:block;float:left; margin-top:40px; margin-left:10px;}
+.mou span{float:right;font-size:15px; margin-top:45px; margin-right:15px; color:#333;}
+.kun{width:500px; height:100px;float:right;}
+.kun input{width:375px; height:36px; margin-top:20px; float:left; padding-left:5px;}
+.kun .sou{width:70px; height:39px; background:#cc0000;color:#fff; display:block; text-align:center; line-height:39px; float:left;margin-top:20px; margin-bottom:10px;}
+.kun p{clear:both; margin-top:10px; font-size:12px;}
+.kun p a{color:#676767; text-decoration:none;}
+.kun p a:hover{color:#00F;}
+
+.nav{width:100%;height:40px;margin:0 auto;background:#e21210;}
+.nav-in{width:1004px;height:40px;margin:0 auto;}
+.nav-in ul{width:1004px;height:40px;}
+.nav-in ul>li{position:relative;width:141px;height:40px;float:left;color:#fff;text-align:center;font-size:15px;text-align:center;line-height:40px; z-index:123456;}
+.nav-in ul>li a{background:#e21210;display:block;color:#fff}
+.nav-in ul>li a:hover{background:#bb0f0d;color:#fff}
+.nav-in ul li ul{width:140px;position:absolute;top:39px;left:0px;display:none;border:1px solid #bf1b19;height:auto}
+.nav-in ul li ul li a{width:140px;height:40px;line-height:40px;text-align:center;color:#666666;background:#fff;}
+.nav-in ul li ul li a:hover{color:red;background:#fff;}
+/*导航结束*/
+.qb{width:100%; height:2255px;}
+	.center{width:1000px;height:80px;margin:0 auto;border-bottom: 1px solid #dfdfdf;}
+	.center span{color:#e2120e;font-size:18px;line-height:80px;}
+	.center a{text-decoration:none;font-size:14px;color:#dfdfdf;}
+	.center-1{width:1000px;height:400px;margin:0 auto;}
+	.center-left{width:800px;height:192px;float:left;overflow:hidden;}
+	.center-left li{list-style:none;width:170px;height:170px;float:left;margin-right:20px;}
+	.center-left .cL{margin-right:0px;}
+	.center-left img{float:left;}
+	.center-left ul{float:left;margin-top:22px;}
+	.center-left ul li span{float:left;font-size:12px;color:#e2100f;line-height:30px;}
+	.center-left ul li b{float:left;font-size:12px;color:#676767;line-height:30px;margin-left:60px;}
+	.center-left ul li a{float:left;font-size:12px;color:#676767;text-decoration:none;}
+	.img-1{margin-top:22px;margin-right:5px;}
+	.img-2{margin-top:22px;margin-left:5px;}
+	.center-right{width:184px;height:170px;margin-top:22px;float:right;}
+	.center-right img{float:left;margin-bottom:5px;}
+	.center-right a{float:right;text-decoration:none;color:#666;font-size:12px;}
+	.cen-b img{float:left;margin-right:20px;}
+	.cen-b{width: 1000px;height: 105px;overflow:hidden;margin:10px auto;}
+	.cen-b div{float:left;}
+	.cen-b span{display:block;}
+	.cen-9 {width:1020px;height:105px;}
+	.cen-c{width:1000px;height:120px;float:left;}
+	.cenc-1{width:280px;height:110px;float:left;margin-top: 10px;margin-right:80px;}
+	.cenc-1 a{text-decoration:none;font-size:12px;color:#636363;float:left;line-height:26px;}
+	.cenc-1 span{text-decoration:none;font-size:12px;color:#cdcdcd;float:right;}
+	.cen-c #cenc-1{margin-right:0px;}
+	.tabL{width:1000px;height:404px;margin:0 auto;}
+	#box ul ul{z-index:123456789;width:125px;height:200px;display:none;position:absolute;}
+	#box ul li ul li{display:block;width:124px;height:40px;background:#e21210;border:1px solid 
+		#666;border-top:none;color:#fff;}
+	#box ul li ul li:hover{background:#fff;color:#e21210;}
+	.Lcen{width:1000px;height:350px;}
+	.Lcen div ul{width:1000px;height:350px;padding-top: 20px;}
+	.Lcen div ul li{width:185px;height:350px;float:left;margin-right:18px;}
+	.Lcen div ul .none{margin-right:0px;}
+	.Lcen div ul li span{font-size:12px;margin-left:10px;margin-right:50px;color:#e42220;line-height:40px;}
+	.Lcen div ul li b{font-size:12px;color:#ff9002;}
+	.Lcen div ul li a{text-decoration:none;font-size:12px;color:#676767;margin-left:10px;line-height:35px;}
+	.Lcen div{margin:0;padding:0;width:1000px;height:300px;border-top:1px solid #ccc;display:none;}
+	.Ltab{margin:0;padding:0;list-style:none;width:1000px;overflow:hidden;}
+	.Ltab li{float:left;width:100px;height:35px;background:#fff;color:#686868;text-align:center;line-height:35px;cursor:pointer;margin:0px 15px;font-size:14px;margin-top:22px;}
+	.Lcen .Lon{display:block;}
+	.Ltab li.Lcur{background:#e21210;color:#fff;}
+	.bom{width:100%;height:330px;background:#f9f9f9;margin-top:50px;}
+	.bom-1{width:1000px;height:295px;margin:0 auto;padding-top:35px;}
+	.footer{width:100%; height:328px; border-top:1px solid #dddddd; background:#f9f9f9; font-size:12px; float:left;font-size:12px; margin-top:30px;}
+.footer-1{width:100%;height:150px;  border-bottom:1px solid #dddddd;}
+.zh{width:1000px; height:150px;}
+.db1{width:153px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db1 img{width:25px; height:25px; float:left;}
+.ul1{width:87px; height:100px; line-height:25px; color:#676767; display:block;}
+.ul1 a{color:#666666; text-decoration:none;}
+.db2{width:242px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db2 img{width:25px; height:25px; float:left; margin-left:45px;}
+.ul2{width:87px; height:100px; line-height:25px; color:#676767; display:block;}
+.ul2 a{color:#666666; text-decoration:none;}
+.db3{width:213px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db3 img{width:25px; height:25px; float:left; margin-left:45px; margin-left:29px;}
+.ul3{width:87px; height:100px; line-height:25px; color:#676767; display:block;}
+.ul3 a{color:#666666; text-decoration:none;}
+.db4{width:234px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db4 img{width:25px; height:25px; float:left; margin-left:40px;}
+.ul4{width:87px; height:100px; line-height:25px; color:#676767; display:block;}
+.ul4 a{color:#666666; text-decoration:none;}
+.db5{width:146px; height:110px; display:block; float:left; margin-top:25px;}
+.db5 img{width:25px; height:25px; float:left; margin-left:25px;}
+.ul5{width:87px; height:100px; line-height:25px; color:#676767; display:block; float:right;}
+.ul5 a{color:#666666; text-decoration:none;}
+.footer-2{width:100%;height:42px; border-bottom:1px solid #eaeaeb;}
+.footer-2 .footer-2f{width:1000px ;height:42px; margin:0 auto;}
+.footer-2f span{height:12px; line-height:12px; text-align:center;display:block;float:left;margin-top:15px;border-right:1px solid #e7e7e7;}
+.footer-2f span a{color:#666666; text-decoration:none;}
+.footer-2f span a:hover{text-decoration:none;}
+.footer-2f .span1{width:39px;text-align:left;}
+.footer-2f .span2{width:77px;}
+.footer-2f .span3{width:89px;}
+.footer-2f .span4{width:210px;}
+.footer-2f .span5{width:101px;}
+.footer-3{width:1000px; height:57px; margin:30px auto 0px;}
+.footer-3-1{width:504px;height:57px; float:left;}
+.footer-3-1 p{height:25px; line-height:25px;color:#666666;}
+.footer-3-2{width:240px;height:57px; float:left;}
+.left-1{width:59px;height:57px; float:left;margin-left:5px;color:#666666; text-align:center; }
+.left-2{width:59px;height:57px; float:left;color:#666666; text-align:center;}
+.footer-3-3{width:164px;height:57px; float:left; margin-left:15px;}
+.footer-3-3 img{display:block;width:37px;height:37px;float:left;}
+.footer-3-3 span{width:110px;height:37px; line-height:37px;float:left; margin-left:5px;color:#666666; font-size:14px;}
+/*尾部结束*/
+	.box2 div{ width:100%; height:320px; overflow:hidden; margin:0 auto; position:relative; margin-top:20px; z-index:-10;}
+.box2 ul{ position:absolute; left:50%; top:480px; line-height:18px;}
+.box2 ul li{ width:20px; height:20px; border-radius:50%; margin-left:5px; background:rgba(0,153,255,0.7); list-style:none; color:#fff; float:left; display:block; text-align:center; cursor:pointer;}
+.box2 ul li.hover{ background:rgba(255,153,153,0.9);}
+	
+	.fix{ width:100%; height:40px; background:#e21210; position:fixed; top:0; display:none;}
+.fix-in{width:1004px;height:40px;margin:0 auto;}
+.fix-in ul{width:1004px;height:40px;}
+.fix-in ul>li{position:relative;width:141px;height:40px;float:left;color:#fff;text-align:center;font-size:15px;text-align:center;line-height:40px;}
+.fix-in ul>li a{background:#e21210;display:block;color:#fff}
+.fix-in ul>li a:hover{background:#bb0f0d;color:#fff}
+.fix-in ul li ul{width:140px;position:absolute;top:39px;left:0px;display:none;border:1px solid #bf1b19;height:auto}
+.fix-in ul li ul li a{width:140px;height:40px;line-height:40px;text-align:center;color:#666666;background:#fff;}
+.fix-in ul li ul li a:hover{color:red;background:#fff;}
+
+.back{ width:50px; height:30px; position:fixed;  right:20px; bottom:20px; display:none; color:#fff; text-align:center; line-height:30px; cursor:pointer;}
+
+.s1.hover{
+	display: block;
+	position: absolute;
+	width: 28px;
+	height: 26px;
+	display: block;
+	border: 1px solid #e5e5e5;
+	border-bottom: 1px solid #fff;
+	
+	left: 66px;
+	top: 2px;
+}
+
+	</style>
+</head>
+<script src="jq/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script src="js/index.js"></script>
+<script src="js/banner.js"></script>
+<body>
+	<div id="header">
+  <div class="top"> 
+   <img src="images/star.jpg" />
+   <span>收藏58代卖</span>
+   <div id="our">
+      <span>您好，欢迎来到58代卖</span>
+      <img src="images/pho.jpg" />
+      <div id="thr">xiangyun<div class="sanjiao"><s id="s1"></s></div></div>
+      <div id="con">
+        <ul>
+         <li><a href=""><img src="images/she.jpg" /><h>个人设置</h></a></li>
+         <li class="li1"><img src="images/peo.jpg" /><h>我的账户</h></li>
+         <li><a href="#"><img src="images/up.jpg" /><h>退出登录</h></a></li>
+        </ul>
+      </div>
+   </div>
+ <div class="mon">可用云货币:<f>￥401.01</f> | <a href="#">关于我们</a> | <a href="#">联系我们</a></div>
+</div>
+</div>
+<div class="logo">
+   <div class="mou">
+      <img src="images/logo.jpg" />
+      <e></e>
+      <span>服务实体店<br/>的商务平台</span>
+   </div>
+  <div class="kun">
+    <input type="text" placeholder="请输入关键词" /><span class="sou">搜索</span>
+    <p>热门搜索:<a href="#">代卖优势</a> | <a href="#">成功案例</a> | <a href="#">创业秘籍</a> | <a href="#" style="color:#F00">商品大全</a></p>
+  </div>
+</div>
+  
+<div class="nav">
+      <div class="nav-in">
+        <ul>
+          <li><a href="../首页/index.html">首页</a>
+          	<ul>
+            	<li><a href="#">58代卖</a></li>
+                <li><a href="#">官方公告</a></li>
+               
+            </ul>
+          </li>
+          <li><a href="../供应中心/产品大全.html">产品大全</a>
+          	<ul>
+            	<li><a href="../供应中心/产品大全（2）.html">产品大全</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../代卖管理/代销中的货品.html">供应中心</a>
+          	<ul>
+            	<li><a href="#">管理库存</a></li>
+                <li><a href="#">店铺设置</a></li>
+                <li><a href="#">商品介绍</a></li>
+            </ul>
+          </li>
+          <li><a href="../实体店管理/实体店管理.html">分销中心</a>
+          	<ul>
+            	<li><a href="#">已进货品</a></li>
+                <li><a href="#">发布需求</a></li>
+                <li><a href="#">收藏家</a></li>
+                <li><a href="#">代销中心</a></li>
+            </ul>
+          </li>
+          <li><a href="../格子铺/index.html">格子铺专区</a>
+          	<ul>
+            	<li><a href="../格子铺/index - 副本.html">格子铺介绍</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../供应中心/操作流程.html">操作流程</a>
+          	<ul>
+            	<li><a href="../58代卖-详情页/加入购物车.html">Shopping!!</a></li>
+                
+            </ul>
+          </li>
+          <li><a href="../会员中心/jbxx.html">会员中心</a>
+          	<ul>
+            	<li><a href="../会员中心/zcxx.html">注册信息</a></li>
+                <li><a href="../会员中心/jemxxq.html">资金管理</a></li>
+                <li><a href="../会员中心/cxmx.html">查询明细</a></li>
+                <li><a href="../会员中心/zfb.html">支付宝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</div>
+ <div class="fix">
+ 	<div class="nav-in">
+        <ul>
+          <li><a href="../首页/index.html">首页</a>
+          	<ul>
+            	<li><a href="#">58代卖</a></li>
+                <li><a href="#">官方公告</a></li>
+               
+            </ul>
+          </li>
+          <li><a href="../供应中心/产品大全.html">产品大全</a>
+          	<ul>
+            	<li><a href="../供应中心/产品大全（2）.html">产品大全</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../代卖管理/代销中的货品.html">供应中心</a>
+          	<ul>
+            	<li><a href="#">管理库存</a></li>
+                <li><a href="#">店铺设置</a></li>
+                <li><a href="#">商品介绍</a></li>
+            </ul>
+          </li>
+          <li><a href="../实体店管理/实体店管理.html">分销中心</a>
+          	<ul>
+            	<li><a href="#">已进货品</a></li>
+                <li><a href="#">发布需求</a></li>
+                <li><a href="#">收藏家</a></li>
+                <li><a href="#">代销中心</a></li>
+            </ul>
+          </li>
+          <li><a href="#">格子铺专区</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../供应中心/操作流程.html">操作流程</a>
+          	<ul>
+            	<li><a href="../58代卖-详情页/加入购物车.html">Shopping!!</a></li>
+                
+            </ul>
+          </li>
+          <li><a href="../会员中心/jbxx.html">会员中心</a>
+          	<ul>
+            	<li><a href="../会员中心/zcxx.html">注册信息</a></li>
+                <li><a href="../会员中心/jemxxq.html">资金管理</a></li>
+                <li><a href="../会员中心/cxmx.html">查询明细</a></li>
+                <li><a href="../会员中心/zfb.html">支付宝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+ </div>
+	<div class="box2">
+		<div>
+			<img style='display:block;' src="images/banner.png" alt="">
+			<img src="images/banner1.png" alt="">
+			<img src="images/banner2.png" alt="">
+		</div>
+			<ul>
+				<li class="hover">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+  	</div>
+  	<div class="center">
+  		<span>需求中心/</span><a href="#">DEMAND CENTER</a>
+  	</div>
+  	<div class="center-1">
+  		<div class="center-left">
+  			<img class="img-1" src="img/w-6.jpg" alt="">
+  			<ul>
+  				<li>
+  					<a href="#"><img src="img/w-2.jpg" alt="" width="169" height="97" /></a>
+  					<span>￥1000.00</span>
+  					<b>100平米</b>
+  					<a href="#">零租金全国连锁格子铺招格主</a>
+  				</li>
+  				<li>
+  					<a href="#"><img src="img/w-3.jpg" alt="" width="169" height="97"></a>
+  					<span>￥1000.00</span>
+  					<b>100平米</b>
+  					<a href="#">全国连锁格子铺招格主</a>
+  				</li>
+  				<li>
+  					<a href="#"><img src="img/w-4.jpg" alt="" width="169" height="97"></a>
+  					<span>￥1000.00</span>
+  					<b>100平米</b>
+  					<a href="#">零租金格子铺招格主</a>
+  				</li>
+  				<li class="cL">
+  					<a href="#"><img src="img/w-5.jpg" alt="" width="169" height="97"></a>
+  					<span>￥1000.00</span>
+  					<b>100平米</b>
+  					<a href="#">零租金格子铺招格主</a>
+  				</li>
+  			</ul>
+  			<img class="img-2" src="img/w-7.jpg" alt="">
+  		</div>
+  		<div class="center-right">
+  			<img src="img/w-8.jpg" alt="">
+  			<img src="img/w-9.jpg" alt="">
+  			<a href="#">更多>></a>
+  		</div>
+  		<div class="cen-b">
+  			<span>
+  				<div class="cen-9">
+		  			<a href="#"><img src="img/w-10.jpg" alt="" width="184" height="105"></a>
+		  			<a href="#"><img src="img/w-11.jpg" alt="" width="184" height="105"></a>
+		  			<a href="#"><img src="img/w-12.jpg" alt="" width="184" height="105"></a>
+                    <a href="#"><img src="img/w-13.jpg" alt="" width="184" height="105"></a>
+		  			<a href="#"><img src="img/w-14.jpg" alt="" width="184" height="105"></a>
+  				</div>
+  				<div></div>
+  			</span>
+  		</div>
+  		<div class="cen-c">
+  			<div class="cenc-1">
+  				<a href="#">奈良品春装新品港仔风字母</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">韩国热卖款~个性人物印花竖条纹长袖北</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">上海人民广场商圈格子铺需求八音盒</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">衬衫时尚潮牌宽松衬衣小外套</a>
+  				<span>14-11-05</span>
+  			</div>
+  			<div class="cenc-1">
+  				<a href="#">文艺字母刺绣短袖T恤</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">男士夹克衫薄款春季加肥加大码</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">外套宽松装日系潮青年连帽印花运动</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">TO DO LIST 便携记事本</a>
+  				<span>14-11-05</span>
+  			</div>
+  			<div class="cenc-1" id='cenc-1'>
+  				<a href="#">文艺字母刺绣短袖T恤</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">男士夹克衫薄款春季加肥加大码</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">外套宽松装日系潮青年连帽印花运动</a>
+  				<span>14-11-05</span>
+  				<br>
+  				<a href="#">TO DO LIST 便携记事本</a>
+  				<span>14-11-05</span>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="center">
+  		<span>需求中心/</span><a href="#">DEMAND CENTER</a>
+  	</div>
+  	<div class="tabL">
+	  	<ul class="Ltab">
+	       <li class="Lcur">求租格子信息</li>
+	       <li>转让格子信息</li>
+	       <li>推荐格子铺</li>
+	 	</ul>
+		<div class='Lcen'>
+			<div class="Lon">
+				<ul>
+					<li>
+						<img src="img/w-15.jpg" alt="">
+						<a href="#">3.8折高腰牛仔裤 错过请等明年</a>
+						<span>￥320.00</span>
+						<b>764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-16.jpg" alt="">
+						<a href="#">加厚羊羔毛外套超值低价包邮</a>
+						<span>￥450.00</span>
+						<b>6764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-17.jpg" alt="">
+						<a href="#">最后一天疯狂抢优惠卷减三元</a>
+						<span>￥160.00</span>
+						<b>5635人付款</b>
+					</li>
+					<li>
+						<img src="img/w-18.jpg" alt="">
+						<a href="#">疯狂好评品牌西装4.2折+立减五</a>
+						<span>￥270.00</span>
+						<b>3123人付款</b>
+					</li>
+					<li class="none">
+						<img src="img/w-19.jpg" alt="">
+						<a href="#">五色可以选高性价比冰点折扣</a>
+						<span>￥350.00</span>
+						<b>4764人付款</b>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<img src="img/w-18.jpg" alt="">
+						<a href="#">3.8折高腰牛仔裤 错过请等明年</a>
+						<span>￥320.00</span>
+						<b>764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-17.jpg" alt="">
+						<a href="#">加厚羊羔毛外套超值低价包邮</a>
+						<span>￥450.00</span>
+						<b>6764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-16.jpg" alt="">
+						<a href="#">最后一天疯狂抢优惠卷减三元</a>
+						<span>￥160.00</span>
+						<b>5635人付款</b>
+					</li>
+					<li>
+						<img src="img/w-15.jpg" alt="">
+						<a href="#">疯狂好评品牌西装4.2折+立减五</a>
+						<span>￥270.00</span>
+						<b>3123人付款</b>
+					</li>
+					<li class="none">
+						<img src="img/w-19.jpg" alt="">
+						<a href="#">五色可以选高性价比冰点折扣</a>
+						<span>￥350.00</span>
+						<b>4764人付款</b>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<img src="img/w-19.jpg" alt="">
+						<a href="#">3.8折高腰牛仔裤 错过请等明年</a>
+						<span>￥320.00</span>
+						<b>764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-15.jpg" alt="">
+						<a href="#">加厚羊羔毛外套超值低价包邮</a>
+						<span>￥450.00</span>
+						<b>6764人付款</b>
+					</li>
+					<li>
+						<img src="img/w-17.jpg" alt="">
+						<a href="#">最后一天疯狂抢优惠卷减三元</a>
+						<span>￥160.00</span>
+						<b>5635人付款</b>
+					</li>
+					<li>
+						<img src="img/w-18.jpg" alt="">
+						<a href="#">疯狂好评品牌西装4.2折+立减五</a>
+						<span>￥270.00</span>
+						<b>3123人付款</b>
+					</li>
+					<li class="none">
+						<img src="img/w-16.jpg" alt="">
+						<a href="#">五色可以选高性价比冰点折扣</a>
+						<span>￥350.00</span>
+						<b>4764人付款</b>
+					</li>
+				</ul>
+			</div>
+		</div>
+  	</div>
+<!--内容结束-->
+    <div class="footer">
+  <div class="footer-1">
+   <div class="zh">
+      <span class="db1">
+         <img src="images/foot1.png"/>
+         <ul class="ul1">
+           <li><font size="2"><b>新手指南</b></font></li>
+           <li><a href="#">操作指南</a></li>
+           <li><a href="#">免费注册</a></li>
+           <li><a href="#">热门问题</a></li>
+         </ul>
+      </span>
+      <span class="db2">
+         <img src="images/foot2.png"/>
+         <ul class="ul2">
+           <li><font size="2"><b>供应指南</b></font></li>
+           <li><a href="#">设置店铺</a></li>
+           <li><a href="#">添加商品</a></li>
+           <li><a href="#">销售发货</a></li>
+         </ul>
+      </span>
+      <span class="db3">
+         <img src="images/foot3.png"/>
+         <ul class="ul3">
+         <li><font size="2"><b>分销指南</b></font></li>
+         <li><a href="#">选货下单</a></li>
+         <li><a href="#">支付货款</a></li>
+         <li><a href="#">开始代卖</a></li>
+         </ul>
+      </span>
+      <span class="db4">
+         <img src="images/foot4.png"/>
+         <ul class="ul4">
+         <li><font size="2"><b>支付与提现</b></font></li>
+         <li><a href="#">提现方式</a></li>
+         <li><a href="#">充值说明</a></li>
+         <li><a href="#">支付方式</a></li>
+         </ul>
+      </span>
+      <span class="db5">
+         <img src="images/foot4.png"/>
+         <ul class="ul5">
+         <li><b>会员说明</b></li>
+         <li><a href="#">供应商</a></li>
+         <li><a href="#">分销商</a></li>
+         <li><a href="#">有问必答</a></li>
+         </ul>
+      </span>
+
+
+   </div>
+  
+  </div>
+  <div class="footer-2">
+    <div class="footer-2f">
+      <span class="span1" style="border-left:none;"><a href="#">首页</a></span>
+      <span class="span2"><a href="#">产品大全</a></span>
+      <span class="span2"><a href="#">供应中心</a></span>
+      <span class="span2"><a href="#">分销中心</a></span>
+      <span class="span3"><a href="#">格子铺专区</a></span>
+      <span class="span2" style="border:none;"><a href="#">最新资讯</a></span>
+      <span class="span4"><a href="#">代卖供货:分销商代卖操作方法</a></span>
+      <span class="span5"><a href="#">店铺管理系统</a></span>
+      <span class="span2"><a href="#">进货流程</a></span>
+      <span class="span3"><a href="#">分销商入口</a></span>
+      <span class="span2" style="border:none;"><a href="#">供应入口</a></span>
+    </div>
+  </div>
+  <div class="footer-3">
+    <div class="footer-3-1">
+      <p>Copyright@2013xiangyunshangwu.com  All Rights Reserved 58代卖版权所有</p>
+      <p>ICP证:京ICP备13019928号</p>
+    </div>
+    <div class="footer-3-2">
+      <div class="left-1">
+      <img src="images/foot6.png" width="37" height="37" /><br/>卖家保证
+      </div>
+      <div class="left-1">
+      <img src="images/foot7.png" width="37" height="37" /><br/>商家认证
+      </div>
+       <div class="left-2">
+      <img src="images/foot8.png" width="37" height="37" /><br/>安全交易
+      </div>
+    </div>
+    <div class="footer-3-3">
+      <img src="images/dianhua.png" width="37" height="37" /><span>010-88333615</span>
+    </div>
+  </div>
+</div>
+
+   <div class="back"><img src="images/jt01.png" /></div>
+</body>
+</html>

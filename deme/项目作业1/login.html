@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="font-size:16px">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" type="text/css"/>
+		<script src="js/jquery-1.11.2.js"></script>
+		<script src="js/login.js" defer="defer"></script>
+	</head>
+	<body>
+		<div class="huabu">
+			<div class="banner"><img src="images/banner.png" style="width:16rem;height:9rem;"></div>
+			<div class="name">
+				<div><img src="images/name.png" style="width:2.5rem;height:2rem;"></div>
+				<input type="text" id="username1" placeholder="请输入用户名"/>
+			</div>
+			<div class="name">
+				<div><img src="images/pass.png" style="width:2.5rem;height:2rem;"></div>
+				<input type="password" id="pass1" placeholder="请输入密码"/>
+			</div>
+			<div class="rem">
+				<div class="m1"><input type="checkbox" id="reb" /><font>记住密码</font></div>
+				<div class="m2"><input type="checkbox" id="mian" /><font>7天内免登录</font></div>
+			</div>
+			<input type="submit" class="login" value="登录"></br>
+			<input type="submit" class="login2" value="在线注册">
+		</div>
+	</body>
+	<script>
+		window.onresize=window.onload=function(){
+			document.documentElement.style.fontSize=innerWidth/16+'px';
+		}
+		console.log(document.cookie);
+	</script>
+</html>

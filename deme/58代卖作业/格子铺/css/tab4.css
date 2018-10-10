@@ -1,0 +1,25 @@
+.main_right ul{width: 795px;height: 30px;border-bottom: 1px solid #EEEEEE;}
+.main_right ul li{float: left;width: 80px;height: 30px;line-height: 30px;text-align: center;}
+.main_right ul li a:hover{text-align:center;line-height:30px;display:block;float:left;color:#fff;width:80px;height:30px;background: #E21210;text-decoration: none;}
+.right1{width: 795px;height: 40px;border: 1px solid #ccc;margin-top: 20px;background: #F3F3F3;}
+.right1 .pp{width: 100px;text-align: center;border-right: 1px solid #ccc;font-weight: bold;float: left;line-height: 40px;}
+.border{width: 100px;height: 30px;border: 1px solid #ccc;float: left;background: #fff;margin: 5px 5px 0 10px;}
+.right1 .span1{color:#C00705;float: left;width: 20px;height: 40px;font-size:15px;}
+.right1 .span2{margin-left: 50px;color:#A2A2A2;line-height: 40px;display: block;height: 40px;}
+.right2{width: 795px;height: 40px;border: 1px solid #ccc;border-top:none;}
+.right2 .span1{color:#C00705;float: left;width: 20px;height: 40px;font-size:15px;}
+.right2 .span2{margin-left: 50px;color:#A2A2A2;line-height: 40px;display: block;height: 40px;}
+.right2 .pp{width: 100px;text-align: center;border-right: 1px solid #ccc;font-weight: bold;float: left;line-height: 40px;}
+
+
+
+
+
+
+
+
+
+
+
+.right_bottom{width: 795px;float: left;text-align: center;height: 50px;border:1px solid #CCC;border-top:none;}
+.tianjia{width: 100px;background: #E21210;color:#fff;text-align: center;height: 30px;line-height: 30px;margin: 10px auto;;}

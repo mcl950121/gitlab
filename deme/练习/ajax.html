@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.8.3.min.js"></script>
+		<script>
+//		var user_name=$('#tex').val();
+//		var user_pass_word=$('#pas').val();
+//		var user_phone=$('#tel').val();
+
+		function zhu(){
+			var user_name=$('#tex').val();
+			var user_pass_word=$('#pas').val();
+			var user_phone=$('#tel').val();
+			$.ajax({
+				url:'http://10.115.12.223/project/data/register.php',
+				data:{"user_name":user_name,"user_pass_word":user_pass_word,"user_phone":user_phone},
+				type:'post',
+				dataType:'jsonp',
+				jsonp:'callback',
+				jsonpCallback:'success_jsonnpCallback',
+				success:function(data){
+					if(data.msg=='success'){
+						//提示语
+//						window.location='js复习.html'
+					}
+					if(data.msg=='err'){
+						alert(data.reason);
+					}
+				}
+			})
+		}
+		</script>
+	</head>
+	<body>
+		<div id="div">
+			用户名<input type="text" id="tex"/>
+			密码<input type="password" id="pas" />
+			手机号<input type="tel" id="tel" />
+			<input type="button"  value="注册" onclick="zhu()"/>
+		</div>
+		
+	</body>
+</html>

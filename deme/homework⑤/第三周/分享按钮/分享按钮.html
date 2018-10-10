@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+window.onload=function(){
+	$ ('div').onmouseover=function(){
+		move(10,0);
+	};
+	$ ('div').onmouseout=function(){
+		move(-10,-100);
+	};
+};	
+
+
+//数据库
+function $ (str){
+	return document.getElementById(str);
+};
+
+function move (iSped,target){
+var timer=null;
+clearInterval(timer);
+timer=setInterval(function(){
+	//var iSped=dir;
+	if($('div').offsetLeft==target){
+		clearInterval(timer);
+		}else{
+			$('div').style.left=$('div').offsetLeft+iSped+'px';
+			}
+	},14);
+};
+</script>
+<style>
+body,div,span{margin:0;padding:0;}
+#div{width:100px;height:200px;position:absolute;top:0;background:red;left:-100px;}
+#span{
+	display:block;
+	position: absolute;
+	left: 100px;
+	top: 64px;
+	background: green;
+};
+</style>
+</head>
+
+<body>
+<div id="div">
+	<span id="span">分享到</span>
+</div>
+</body>
+</html>

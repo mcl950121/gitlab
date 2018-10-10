@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#div{margin:0 auto;text-align:center}
+</style>
+<script>
+function doub(num){
+	if(num<10)
+	{
+		return '0'+num;
+	}else{
+		return ''+num;
+	}
+}
+window.onload=function(){
+	var oDiv=document.getElementById('div');
+	var aImg=document.getElementsByTagName('img');
+	Time();
+	setInterval(Time,1000);
+	function Time(){
+	var nowTime=new Date();
+	var iHour=nowTime.getHours();
+	var iMin=nowTime.getMinutes();
+	var iSec=nowTime.getSeconds();
+	
+	str=doub(iHour)+':'+doub(iMin)+':'+doub(iSec);
+	oDiv.innerHTML=str;
+	
+	for(var i=0;i<aImg.length;i++){
+		if(i==2||i==5){
+			aImg[i].src='img/dian.jpg';	
+		}else{
+			aImg[i].src='img/'+str.charAt(i)+'.jpg';
+		};
+	};
+};
+};
+</script>
+</head>
+
+<body>
+<div id="div">
+</div>
+<img>
+<img>
+<img>
+<img>
+<img>
+<img>
+<img>
+<img>
+</body>
+</html>

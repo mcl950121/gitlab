@@ -1,0 +1,868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>实体店管理</title>
+<link rel="stylesheet" href="css/分销中心.css" />
+<script src="jquery-1.8.3.min.js"></script>
+<script src="jquery-1.11.2.js"></script>
+<script src="js/分销中心.js"></script>
+<script src="js/t.js"></script>
+</head>
+
+<body>
+  <div id="header">
+  <div class="top"> 
+   <img src="images/star.jpg" />
+   <span>收藏58代卖</span>
+   <div id="our">
+      <span>您好，欢迎来到58代卖</span>
+      <img src="images/pho.jpg" />
+      <div id="thr">xiangyun<div class="sanjiao"><s id="s1"></s></div></div>
+      <div id="con">
+        <ul>
+         <li><a href="#"><img src="images/she.jpg" /><h>个人设置</h></a></li>
+         <li class="li1"><img src="images/peo.jpg" /><h>我的账户</h></li>
+         <li><a href="#"><img src="images/up.jpg" /><h>退出登录</h></a></li>
+        </ul>
+      </div>
+   </div>
+ <div class="mon">可用云货币:<f>￥401.01</f> | <a href="#">关于我们</a> | <a href="#">联系我们</a></div>
+</div>
+</div>
+<div class="logo">
+   <div class="mou">
+      <img src="images/logo.jpg" />
+      <e></e>
+      <span>服务实体店<br/>的商务平台</span>
+   </div>
+  <div class="kun">
+    <input type="text" placeholder="请输入关键词" /><span class="sou">搜索</span>
+    <p>热门搜索:<a href="#">代卖优势</a> | <a href="#">成功案例</a> | <a href="#">创业秘籍</a> | <a href="#" style="color:#F00">商品大全</a></p>
+  </div>
+</div>
+  <div class="nav">
+      <div class="nav-in">
+        <ul>
+          <li><a href="../首页/index.html">首页</a>
+          	<ul>
+            	<li><a href="#">58代卖</a></li>
+                <li><a href="#">官方公告</a></li>
+               
+            </ul>
+          </li>
+          <li><a href="../供应中心/产品大全.html">产品大全</a>
+          	<ul>
+            	<li><a href="../供应中心/产品大全（2）.html">产品大全</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../代卖管理/代销中的货品.html">供应中心</a>
+          	<ul>
+            	<li><a href="#">管理库存</a></li>
+                <li><a href="#">店铺设置</a></li>
+                <li><a href="#">商品介绍</a></li>
+            </ul>
+          </li>
+          <li><a href="../实体店管理/实体店管理.html">分销中心</a>
+          	<ul>
+            	<li><a href="#">已进货品</a></li>
+                <li><a href="#">发布需求</a></li>
+                <li><a href="#">收藏家</a></li>
+                <li><a href="#">代销中心</a></li>
+            </ul>
+          </li>
+          <li><a href="#">格子铺专区</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../供应中心/操作流程.html">操作流程</a>
+          	<ul>
+            	<li><a href="../58代卖-详情页/加入购物车.html">Shopping!!</a></li>
+                
+            </ul>
+          </li>
+          <li><a href="../会员中心/jbxx.html">会员中心</a>
+          	<ul>
+            	<li><a href="../会员中心/zcxx.html">注册信息</a></li>
+                <li><a href="../会员中心/jemxxq.html">资金管理</a></li>
+                <li><a href="../会员中心/cxmx.html">查询明细</a></li>
+                <li><a href="../会员中心/zfb.html">支付宝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</div>
+ <div class="fix">
+ 	<div class="nav-in">
+        <ul>
+          <li><a href="index.html">首页</a>
+          	<ul>
+            	<li><a href="#">58代卖</a></li>
+                <li><a href="#">官方公告</a></li>
+               
+            </ul>
+          </li>
+          <li><a href="../供应中心/产品大全.html">产品大全</a>
+          	<ul>
+            	<li><a href="../供应中心/产品大全（2）.html">产品大全</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../代卖管理/代销中的货品.html">供应中心</a>
+          	<ul>
+            	<li><a href="#">管理库存</a></li>
+                <li><a href="#">店铺设置</a></li>
+                <li><a href="#">商品介绍</a></li>
+            </ul>
+          </li>
+          <li><a href="../实体店管理/实体店管理.html">分销中心</a>
+          	<ul>
+            	<li><a href="#">已进货品</a></li>
+                <li><a href="#">发布需求</a></li>
+                <li><a href="#">收藏家</a></li>
+                <li><a href="#">代销中心</a></li>
+            </ul>
+          </li>
+          <li><a href="#">格子铺专区</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="../供应中心/操作流程.html">操作流程</a>
+          	<ul>
+            	<li><a href="../58代卖-详情页/加入购物车.html">Shopping!!</a></li>
+                
+            </ul>
+          </li>
+          <li><a href="../会员中心/jbxx.html">会员中心</a>
+          	<ul>
+            	<li><a href="../会员中心/zcxx.html">注册信息</a></li>
+                <li><a href="../会员中心/jemxxq.html">资金管理</a></li>
+                <li><a href="../会员中心/cxmx.html">查询明细</a></li>
+                <li><a href="../会员中心/zfb.html">支付宝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+ </div>
+<div class="ml">
+	<div class="ml1"><font color="#636363">您现在的位置：</font><a href="#">58代卖</a>><a href="#"><font color="#636363">会员中心</font></a>><a href="#">我的店铺</a>><a href="#"><font color="#e2120e">购物订单管理</font></a></div>
+</div>
+
+<div class="content" style="background:#fff;">
+	<div class="content_z">
+    	<span class="s1"><font color="#e11111">交易管理</font><img src="images/z4.png" width="9" height="5" /></span>
+        <div class="div"><a href="#"><span><font>已进货品</font><j></j></span></a>
+        <a href="#"><span><font>代销中的货品</font><j></j></span></a>
+        <a href="#"><span><font>分销商对账</font><j></j></span></a>
+        <a href="#"><span><font>我的收藏夹</font><j></j></span></a>
+        <a href="#"><span><font>发布需求信息</font><j></j></span></a></div>
+    </div>
+    <div class="div">
+        <div class="content_y">
+          <table width="796" border="1" cellspacing="0" cellpadding="0" style="font-size:12px;">
+            <tr style="background:#f3f3f3;height:30px;">
+              <th scope="col">交易号</th>
+              <th scope="col">ID</th>
+              <th scope="col">商品名称</th>
+              <th scope="col">代卖中的数量</th>
+              <th scope="col">退货中的数量</th>
+              <th scope="col">价格</th>
+              <th scope="col">客户名称</th>
+              <th scope="col">创建时间</th>
+              <th scope="col">最晚退货时间</th>
+              <th scope="col" class="ck1">操作</th>
+            </tr>
+            <tr>
+              <td>100001</td>
+              <td>11</td>
+              <td>欧美休闲女鞋软底</td>
+              <td>1</td>
+              <td>0</td>
+              <td>22.5</td>
+              <td>lisong</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+            <tr style="background:#f3f3f3;">
+              <td>1002</td>
+              <td>111</td>
+              <td>在线支付商品测试</td>
+              <td>111</td>
+              <td>1</td>
+              <td>3.00</td>
+              <td>xiangyun</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>22</td>
+              <td>欧美休闲女鞋软底</td>
+              <td>22</td>
+              <td>0</td>
+              <td>500</td>
+              <td>lisong</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+            <tr style="background:#f3f3f3;">
+              <td>78963</td>
+              <td>1</td>
+              <td>祥云测试商品2</td>
+              <td>100001</td>
+              <td>0</td>
+              <td>0.2</td>
+              <td>lisong</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+            <tr>
+              <td>100001</td>
+              <td>011</td>
+              <td>欧美休闲女鞋软底</td>
+              <td>100001</td>
+              <td>0</td>
+              <td>100001</td>
+              <td>lisong</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+            <tr style="background:#f3f3f3;">
+              <td>100001</td>
+              <td>11</td>
+              <td>欧美休闲女鞋软底</td>
+              <td>100001</td>
+              <td>0</td>
+              <td>100001</td>
+              <td>lisong</td>
+              <td>2014/09/29 17:52</td>
+              <td>2014/10/29 13:03</td>
+              <td class="ck"><span><a href="#">查看</a></span></td>
+            </tr>
+          </table>
+            <div class="tz">
+                <span class="jl">共104条记录</span>
+                <img src="images/z7.png" width="35" height="35" />
+                <img src="images/z8.png" width="35" height="35" />
+                <span class="sz">1 2 3 4 5 6 7 8 9 10 11</span>
+                <img src="images/z9.png" width="35" height="35" />
+                <img src="images/z10.png" width="35" height="35" />
+                <span class="tzd">跳转到</span>
+                <input type="text" />
+                <span class="ye">页</span>
+                <span class="qd"><a href="#">确定</a></span>
+            </div>
+        </div>
+        <div class="content_y1">
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+              <tr style="background:#f3f3f3;">
+                <th scope="col">商品名称</th>
+                <th scope="col">单位</th>
+                <th scope="col">数量</th>
+                <th scope="col">销售类型</th>
+                <th scope="col">市场价</th>
+                <th scope="col">金额</th>
+                <th scope="col">操作</th>
+              </tr>
+              <tr>
+                <td><font color="#e21210">2014夏季新款水晶果冻鞋透气沙滩鞋凉鞋女鞋10元代卖</font></td>
+                <td>双</td>
+                <td>4</td>
+                <td>正常</td>
+                <td>189.00</td>
+                <td>20.00</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr style="background:#f3f3f3;">
+                <td>合计：20.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运费0.00元</td>
+                <td>包装费：0</td>
+                <td colspan="2">实际金额：20.00+0.00=20元</td>
+                <td>已付款0.00元</td>
+                <td colspan="2" class="kddh">快递单号：/</td>
+              </tr>
+              <tr style="background:#f3f3f3;">
+                <td colspan="7" class="zhifu"><c><a href="#">立即支付</a></c><d><a href="#">返回</a></d></td>
+              </tr>
+            </table>
+        </div>
+        <div class="content_y2">
+            <p class="p1">
+                <span class="ndq">您当前的可退货额度为：&nbsp;&nbsp;&nbsp;</span>
+                <span class="edu">500.00&nbsp;&nbsp;&nbsp;</span>
+            </p>
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#fafafa;">
+                    <th scope="col">代卖交易号</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">商品图片</th>
+                    <th scope="col">商品名称</th>
+                    <th scope="col">单位</th>
+                    <th scope="col">代卖中的数量</th>
+                    <th scope="col">退货中的数量</th>
+                    <th scope="col">价格</th>
+                    <th scope="col">押款金额</th>
+                    <th scope="col">供应商名</th>
+                    <th scope="col">创建时间</th>
+                    <th scope="col">最晚退货时间</th>
+                    <th scope="col">操作</th>
+                </tr>
+                <tr class="tr1">
+                    <td>187</td>
+                    <td>397</td>
+                    <td>&nbsp;</td>
+                    <td>自行车</td>
+                    <td>个</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>200.00</td>
+                    <td>0</td>
+                    <td>lisong</td>
+                    <td><p>2014/09/24</p>
+                    <p>17:52:56</p></td>
+                    <td><p>2014/10/29</p>
+                    <p>13:03:10</p></td>
+                    <td class="xh"><span class="x"><a href="javascript:;">销货</a></span><span class="t"><a href="javascript:;">退货</a></span></td>
+                </tr>
+            </table>
+            <p class="p2"><strong>&nbsp;&nbsp;销货记录</strong></p>
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#fafafa;">
+                    <th scope="col">销货数量</th>
+                    <th scope="col">销货日期</th>
+                    <th scope="col">操作人</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2014/11/27 12:28:27</td>
+                    <td class="tr2">xiangyun</td>
+                </tr>
+            </table>
+            <p class="p2"><strong>&nbsp;&nbsp;退货记录</strong></p>
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#fafafa;">
+                    <th scope="col">销货数量</th>
+                    <th scope="col">销货日期</th>
+                    <th scope="col">操作人</th>
+                    <th scope="col">状态</th>
+                    <th scope="col">操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2014/11/27 12:28:27</td>
+                    <td>xiangyun</td>
+                    <td>正常</td>
+                    <td class="tr2"></td>
+                </tr>
+            </table>
+            <p class="p2"><strong>&nbsp;&nbsp;结算记录</strong></p>
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#fafafa;">
+                    <th scope="col">销货数量</th>
+                    <th scope="col">销货日期</th>
+                    <th scope="col">操作人</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2014/11/27 12:28:27</td>
+                    <td class="tr2">xiangyun</td>
+                </tr>
+            </table>
+            <span class="fh"><a href="#">返回</a></span>
+        </div>
+        <div class="content_y3">
+            <p>
+                <span>店铺名称</span>
+                <input type="text" class="text" />
+            </p>
+            <p>
+                <span style="float:left;">上传图片</span>
+                <input type="text" class="text1" />
+                <f class="sc"><a href="#">选择</a></f>
+                <f class="sc"><a href="#">上传</a></f>
+                <f class="wz">（支持 JPG JIF PNG JPF 最大不能超过1M）</f>
+            </p>
+            <p>
+                <span style="float:left;">所在地区</span>
+                <select class="select">
+                    <option>省份</option>
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>山西</option>
+                </select>
+                <select class="select">
+                    <option>地级市</option>
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>山西</option>
+                </select>
+                <select class="select">
+                    <option>市、县级市</option>
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>山西</option>
+                </select>
+                <input type="text" class="text1" />
+            </p>
+            <p>
+                <span style="float:left;">月销售额</span>
+                <input type="text" class="text2" value="请保留两位小数" onclick="this.value=''" />
+            </p>
+            <p>
+                <span style="float:left;">店铺介绍</span>
+                <img src="images/z11.png" width="624" height="319" />
+            </p>
+            <div class="qd1"><a href="#">确定</a></div>
+        </div>
+        <div class="content_y4">
+            <span class="tianjia">
+                <span><a href="#" style="color:#fff;background:#e3140e;">添加实体店</a></span>
+                <span><a href="#">添加格子铺</a></span>
+            </span>
+            <p>
+                <span><strong>选择店铺</strong></span>
+                <select>
+                    <option>运动服装</option>
+                    <option>运动器材</option>
+                    <option>数码产品</option>
+                    <option>锤子T3</option>
+                    
+                </select>
+                <span class="tjdp"><a href="#">添加店铺</a></span>
+                
+            </p>
+            <p>
+                <span><strong>标&nbsp;&nbsp;&nbsp;&nbsp;题</strong></span>
+                <input type="text" class="t1" />
+            </p>
+            <p>
+                <span><strong>上传图片</strong></span>
+                <input type="text" class="text1" />
+                <f class="sc"><a href="#">选择</a></f>
+                <f class="sc"><a href="#">上传</a></f>
+                <f class="wz">（支持 JPG JIF PNG JPF 最大不能超过1M）</f>
+            </p>
+            <p class="check">
+                <span style="height:280px;"><strong>详细介绍</strong></span>
+                <span class="checkbox">
+                    <g><input type="checkbox" /><font color="#e31110" size="2"><strong>家用电器</strong></font></g>
+                    <h class="h1"><input type="checkbox" /><font color="#e31110">大家电</font>
+                        <j><input type="checkbox" />平板电视&nbsp;<input type="checkbox" />空调&nbsp;<input type="checkbox" />冰箱&nbsp;<input type="checkbox" />洗衣机&nbsp;<input type="checkbox" />家庭影院&nbsp;<input type="checkbox" />DVD&nbsp;<input type="checkbox" />迷你音箱&nbsp;<input type="checkbox" />烟机/灶具&nbsp;<input type="checkbox" />酒柜/冷柜<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" />消毒柜/洗碗机</j>
+                    </h>
+                    <h><input type="checkbox" /><font color="#e31110">生活电器</font>
+                        <j><input type="checkbox" />取暖电器&nbsp;<input type="checkbox" />插座&nbsp;<input type="checkbox" />净化器&nbsp;<input type="checkbox" />加湿器&nbsp;<input type="checkbox" />净水设备&nbsp;<input type="checkbox" />扫地机器人&nbsp;<input type="checkbox" />挂烫机/熨斗&nbsp;<input type="checkbox" />烟机灶具;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" />消毒柜/洗碗机</j>
+                    </h>
+                </span>
+                <span class="checkbox">
+                    <g><input type="checkbox" /><font color="#e31110" size="2"><strong>户外运动</strong></font></g>
+                    <h><input type="checkbox" /><font color="#e31110">运动鞋包</font>
+                        <j><input type="checkbox" />乒羽网鞋&nbsp;<input type="checkbox" />休闲鞋&nbsp;<input type="checkbox" />跑步鞋&nbsp;<input type="checkbox" />帆布鞋&nbsp;<input type="checkbox" />篮球鞋&nbsp;<input type="checkbox" />板鞋&nbsp;<input type="checkbox" />足球鞋&nbsp;<input type="checkbox" />运动包&nbsp;<input type="checkbox" />训练鞋柜&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" />专项运动鞋</j>
+                    </h>
+                    <h><input type="checkbox" /><font color="#e31110">运动服饰</font>
+                        <j><input type="checkbox" />运动套装&nbsp;<input type="checkbox" />棉服&nbsp;<input type="checkbox" />羽绒服&nbsp;<input type="checkbox" />训练服&nbsp;<input type="checkbox" />运动背心&nbsp;<input type="checkbox" />夹克/风衣&nbsp;<input type="checkbox" />卫衣/套头衫&nbsp;&nbsp;&nbsp;<input type="checkbox" />夹克/风衣<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" />毛衫/线衫</j>
+                    </h>
+                </span>
+            </p>
+            <p class="img" style="height:321px;">
+                <span style="height:321px;float:left;"><strong>详细介绍</strong></span>
+                <img src="images/z11.png" width="624" height="319" style="display:block;float:left;" />
+            </p>
+            <p>
+                <span>价格区间</span>
+                <input type="text" class="text_1" />—<input type="text" class="text_1" />
+            </p>
+            <p>
+                <span>需求量</span>
+                <input type="text" class="text_2" />
+            </p>
+            <a href="#" class="queding">确定</a>
+        </div>
+        <div class="content_y5">
+            <span class="lixia">按月份搜索：
+                <select>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                </select>
+                <select>
+                    <option>1月</option>
+                    <option>2月</option>
+                    <option>3月</option>
+                    <option>4月</option>
+                    <option>5月</option>
+                    <option>6月</option>
+                    <option>7月</option>
+                    <option>8月</option>
+                    <option>9月</option>
+                    <option>10月</option>
+                    <option>11月</option>
+                    <option>12月</option>
+                </select>
+                <input value="搜索" type="button"/>
+            </span>
+            
+            <table width="798"  cellspacing="0" cellpadding="0" class="tab1">
+                <tr class="tiao">
+                    <td width="124" height="40">交易号</td>
+                    <td width="92" height="40">ID</td>
+                    <td width="91" height="40">商品名称</td>
+                    <td width="89" height="40">结算数量</td>
+                    <td width="90" height="40">价格</td>
+                    <td width="90" height="40">结算金额</td>
+                    <td width="93" height="40">分销商名</td>
+                    <td width="124" height="40">创建时间</td>
+                </tr>
+                <tr>
+                    <td height="40">DD201410903229</td>
+                    <td height="40">132266976</td>
+                    <td height="40" >xiangyun</td>
+                    <td height="40">110</td>
+                    <td height="40">110.00</td>
+                    <td height="40">110.00</td>
+                    <td height="40">祥云</td>
+                    <td height="40">2014/10/9&nbsp;0:03:02</td>
+                </tr>
+                <tr>
+                    <td colspan="8" valign="middle" height="40"><a href="" class="sheng">生成Excel表格文件</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content_y6">
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#f3f3f3;">
+                    <th scope="col">选择</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">商品名称</th>
+                    <th scope="col">图片</th>
+                    <th scope="col">建议零售价</th>
+                    <th scope="col">代卖拿货价</th>
+                    <th scope="col" style="height:40px;">操作</th>
+                </tr>
+                <tr>
+                    <td colspan="7" style="height:40px;"><span class="spa1"><input type="checkbox" /><a href="#">批量删除</a> <a href="#" style="color:#e21210;">批量删除</a></span><span class="spa2">搜索标题：<input type="text" placeholder="请输入关键字" /><k><a href="#">搜索</a></k></span></td>
+                </tr>
+                <tr style="height:86px;">
+                    <td><input type="checkbox" /></td>
+                    <td>386</td>
+                    <td>时尚帽子女韩版潮秋冬季护耳保暖帽<br/>女士冬天兔毛针线毛线帽鸭舌帽</td>
+                    <td><img src="images/z12.png" width="163" height="76" /></td>
+                    <td>379.00</td>
+                    <td>170.00</td>
+                    <td style=" width:86px;"><a href="#" class="yichu">移出收藏夹</a></td>
+                </tr>
+                <tr style="height:86px;background:#f9f9f9;">
+                    <td><input type="checkbox" /></td>
+                    <td>386</td>
+                    <td>时尚帽子女韩版潮秋冬季护耳保暖帽<br/>女士冬天兔毛针线毛线帽鸭舌帽</td>
+                    <td><img src="images/z12.png" width="163" height="76" /></td>
+                    <td>379.00</td>
+                    <td>170.00</td>
+                    <td style=" width:86px;"><a href="#" class="yichu">移出收藏夹</a></td>
+                </tr>
+            </table>
+            <div class="tz">
+                <span class="jl">共104条记录</span>
+                <img src="images/z7.png" width="35" height="35" />
+                <img src="images/z8.png" width="35" height="35" />
+                <span class="sz">1 2 3 4 5 6 7 8 9 10 11</span>
+                <img src="images/z9.png" width="35" height="35" />
+                <img src="images/z10.png" width="35" height="35" />
+                <span class="tzd">跳转到</span>
+                <input type="text" />
+                <span class="ye">页</span>
+                <span class="qd"><a href="#">确定</a></span>
+            </div>
+        </div>
+        <div class="content_y8">
+            <table width="798" border="1" cellspacing="0" cellpadding="0">
+                <tr style="background:#fafafa;">
+                    <th scope="col">订单编号</th>
+                    <th scope="col">客户名称</th>
+                    <th scope="col">下单时间</th>
+                    <th scope="col">订单金额</th>
+                    <th scope="col">实际金额</th>
+                    <th scope="col">付款状态</th>
+                    <th scope="col">物流状态</th>
+                    <th scope="col">操作</th>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#a5d23b">同意退款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#c8c8c8">等待退款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td><font color="#418bcc">成交OK</font></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#418bc8">已经汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td><font color="#418bcc">成交OK</font></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#418bc8">已经汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr style="background:#fafafa;">
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+                <tr>
+                    <td><font color="#418bca">DD20140032292</font></td>
+                    <td>祥云</td>
+                    <td><p>2014/10/09</p>
+                    <p>23:03:02</p></td>
+                    <td>21.40</td>
+                    <td>21.40</td>
+                    <td><font color="#e21210">等待汇款</font></td>
+                    <td><font color="#e21210">未发货</font></td>
+                    <td class="zt"><span class="zf"><a href="#">作废</a></span><span class="tk"><a href="#">退款</a></span><span class="zfyf"><a href="#">支付运费</a></span></td>
+                </tr>
+            </table>
+            <div class="tz">
+                <span class="jl">共104条记录</span>
+                <img src="images/z7.png" width="35" height="35" />
+                <img src="images/z8.png" width="35" height="35" />
+                <span class="sz">1 2 3 4 5 6 7 8 9 10 11</span>
+                <img src="images/z9.png" width="35" height="35" />
+                <img src="images/z10.png" width="35" height="35" />
+                <span class="tzd">跳转到</span>
+                <input type="text" />
+                <span class="ye">页</span>
+                <span class="qd"><a href="#">确定</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部开始-->
+<div class="footer">
+  <div class="footer-1">
+    <div  class="ul-f">
+       <ul class="ul-y">
+         <li class="ul-y-li1"><img src="images/foot1.png" width="25" height="25" /><b>&nbsp;&nbsp;新手指南</b></li>
+         <li class="li-f"><a href="#">操作指南</a></li>
+         <li class="li-f"><a href="#">免费注册</a></li>
+         <li class="li-f"><a href="#">热门问题</a></li>
+       </ul>
+       <ul class="ul-r">
+         <li><img src="images/foot2.png" width="25" height="25" /><b>&nbsp;&nbsp;供应指南</b></li>
+         <li class="li-f"><a href="#">设置店铺</a></li>
+         <li class="li-f"><a href="#">添加商品</a></li>
+         <li class="li-f"><a href="#">销售发货</a></li>
+       </ul>
+       <ul class="ul-r">
+         <li><img src="images/foot3.png" width="25" height="25" /><b>&nbsp;&nbsp;分销指南</b></li>
+         <li class="li-f"><a href="#">选货下单</a></li>
+         <li class="li-f"><a href="#">支付货款</a></li>
+         <li class="li-f"><a href="#">开始代卖</a></li>
+       </ul>
+       <ul class="ul-r">
+         <li><img src="images/foot4.png" width="25" height="25" /><b>&nbsp;&nbsp;支付与提现</b></li>
+         <li class="li-f"><a href="#">提现方式</a></li>
+         <li class="li-f"><a href="#">充值说明</a></li>
+         <li class="li-f"><a href="#">支付方式</a></li>
+       </ul>
+        <ul class="ul-d">
+         <li><img src="images/foot5.png" width="25" height="25" /><b style="color:#666">&nbsp;&nbsp;会员说明</b></li>
+         <li class="li-f"><a href="#">供应商</a></li>
+         <li class="li-f"><a href="#">分销商</a></li>
+         <li class="li-f"><a href="#">有问必答</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="footer-2">
+    <div class="footer-2f">
+      <span class="span1" style="border-left:none;"><a href="#">首页</a></span>
+      <span class="span2"><a href="#">产品大全</a></span>
+      <span class="span2"><a href="#">供应中心</a></span>
+      <span class="span2"><a href="#">分销中心</a></span>
+      <span class="span3"><a href="#">格子铺专区</a></span>
+      <span class="span2" style="border:none;"><a href="#">最新资讯</a></span>
+      <span class="span4"><a href="#">代卖供货:分销商代卖操作方法</a></span>
+      <span class="span5"><a href="#">店铺管理系统</a></span>
+      <span class="span2"><a href="#">进货流程</a></span>
+      <span class="span3"><a href="#">分销商入口</a></span>
+      <span class="span2" style="border:none;"><a href="#">供应入口</a></span>
+    </div>
+  </div>
+  <div class="footer-3">
+    <div class="footer-3-1">
+      <p>Copyright@2013xiangyunshangwu.com  All Rights Reserved 58代卖版权所有</p>
+      <p>ICP证:京ICP备13019928号</p>
+    </div>
+    <div class="footer-3-2">
+      <div class="left-1">
+      <img src="images/foot6.png" width="37" height="37" /><br/>卖家保证
+      </div>
+      <div class="left-1">
+      <img src="images/foot7.png" width="37" height="37" /><br/>商家认证
+      </div>
+       <div class="left-2">
+      <img src="images/foot8.png" width="37" height="37" /><br/>安全交易
+      </div>
+    </div>
+    <div class="footer-3-3">
+      <img src="images/dianhua.png" width="37" height="37" /><span>010-88333615</span>
+    </div>
+  </div>
+</div>
+<div class="back"><img src="images/jt01.png" /></div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#div{margin:0 auto;text-align:center}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('div');
+	Time();
+	setInterval(Time,1000);
+	function Time(){
+	var nowTime=new Date();
+	var iYear=nowTime.getFullYear();
+	var iMon=nowTime.getMonth()+1;
+	var iDate=nowTime.getDate();
+	var iDay=nowTime.getDay();
+	var iHour=nowTime.getHours();
+	var iMin=nowTime.getMinutes();
+	var iSec=nowTime.getSeconds();
+	var str='';
+	
+	switch(iDay){
+		case 1:iDay='星期一';break;
+		case 2:iDay='星期二';break;
+		case 3:iDay='星期三';break;
+		case 4:iDay='星期四';break;
+		case 5:iDay='星期五';break;
+		case 6:iDay='星期六';break;
+		case 0:iDay='星期日';
+	};
+	
+	if (iMin < 10) { 
+		iMin = "0"+iMin; 
+	} else { 
+		iMin = iMin; 
+	};
+	if (iHour < 10) { 
+		iHour = "0"+iHour; 
+	} else { 
+		iHour = iHour; 
+	}; 
+	if (iSec < 10) { 
+		iSec = "0"+iSec; 
+	} else { 
+		iSec = iSec; 
+	};  
+	
+	str=iYear+'年'+iMon+'月'+iDate+'日'+' '+iDay+' '+iHour+':'+iMin+':'+iSec;
+	oDiv.innerHTML=str;	
+	
+	
+	
+	}
+}
+
+</script>
+</head>
+
+<body>
+<div id="div">
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{margin:0;padding:0;font-family:"微软雅黑","黑体";}
+*{margin:0px;padding:0px}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6,font,span{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.huabu{ width: 16rem;height: 28.4rem; background: #d5ecf2;}
+.tit{width: 16rem;height:1.8rem;line-height: 1.8rem;background: #e9e9e9;border-bottom: 0.05rem solid #c4c4c4;}
+.ret{float:left;width: 1.1rem;height:1.1rem;margin-top:0.4rem;margin-left: 0.55rem;}
+.tit font{float:left;width:12.8rem;height:1.8rem;line-height:1.8rem;text-align: center;;color:#000000;font-size:0.9rem}
+.edit{width:16rem;height:23.4rem;padding-top:0.8rem;}
+.ss{width:15rem;height:1.6rem;border-radius:0.5rem ;background:#FFFFFF;margin-left:0.5rem;border:0.03rem solid #dddddd;position:relative;}
+.ss img{width:1rem;height:1.6rem;float:left;margin-top:0.3rem;margin-left: 0.3rem;}
+.sousuo{width:13rem;height:1.6rem;float: left;border:0;font-size:0.56rem;background:rgba(255,255,255,0);padding-left: 0.5rem;}
+.food_list{width:13rem;height:auto;position:absolute;top:1.8rem;left:0;background:#f6f6f6;font-size:0.6rem;display:none;padding-left: 2rem; letter-spacing: 0.2rem;}
+.list1{width: 15rem;height: 21.2rem;overflow: scroll;margin:0.6rem auto auto auto;}
+.list{width: 15rem;height:auto;overflow:hidden;}
+.list li{width:14.9rem;height: 5rem;background:#f6f6f6;border:0.03rem solid #dddddd;border-radius: 0.5rem;margin-top:0.2rem}
+.list .img{width:3.5rem;height: 2.5rem;float: left;margin-top:1.25rem;border-radius: 0.2rem;margin-left:0.3rem;border:0.03rem solid #dddddd;}
+.jzgd{width:14.9rem;height:2rem;font-size:0.75rem;margin-top:0.2rem;
+border:0.03rem solid #dddddd;border-radius: 0.5rem;background: #f6f6f6;}
+.food{width:9rem;height:5rem;float: left;margin-left: 0.7rem;}
+.food span{width:9rem;height:1rem;font-size:0.8rem;text-align: center;padding-top: 0.5rem;}
+.food font{width: 9rem;height: 1.5rem;border-bottom:0.05rem solid #000;line-height: 1.5rem;color: #363636;font-size:0.52rem;overflow:hidden}
+.food money{display:block;width: 9rem;height: 1.9rem;line-height: 1.9rem;color: red;font-size:0.8rem;text-align: center;}
+.jian{width: 1rem;height: 1rem;margin-top:2rem;float: left;}
+
+.bottom{width:16rem;height:2.2rem;background: #f6f6f6;font-size:0.53rem;padding-top:0.1rem}
+.bottom ul li{float:left;width:5.3rem;height:2.3rem}
+.bottom ul li font{width:5.2rem;heigth:1.3rem;line-height: 1.3rem;text-align: center;}

@@ -1,0 +1,23 @@
+body{margin:0px;padding:0px;font-family:"微软雅黑","黑体";font-size:12px;}
+*{margin:0px;padding:0px}
+ol,ul,ol,li,p,img,h1,h2,h3,h4,h5,h6{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.all{width: 1260px;height: 1000px;margin: 0 auto;}
+
+.main-left{width: 210px;height: 1000px;float: left;}
+.tit{width: 210px;height:43px;background-image:url(../img/pic1.png);color: #FFFFFF;font-size: 15px;padding-top: 15px;text-align: center;}
+.nav{width: 200px;height: 942px;background-color: #f0f3f8;border-right:1px solid #e5e8ed;}
+.nav p{display: block;width:200px;height:38px;background: #f0f3f8;}
+.list{width:200px;height:380px;overflow:hidden;}
+.list span{display:block;width: 142px;line-height:45px;border-top:1px solid #e5e8ed;font-size:18px;color:#df8f9a;padding-left:58px;background-image: url(../img/sj1.png);background-position:180px center;background-repeat: no-repeat;}
+.list a{margin-left:30px;display: block;width: 143px;line-height: 32px;color:#8f9094;font-size:14px;padding-left:25px;border: none;}
+.list a:hover{display: block;background-image:url(../img/bg-2.png);background-repeat:no-repeat;background-position:right center ;color:#ffffff}
+
+.main-right{width: 1050px;height: 1000px;float: right;background-color: #ffffff;}
+.top{width: 1050px;height: 57px;background-image: url(../img/top.png);}
+.top-1{width: 140px;height: 58px;float:right;font-size:14px;line-height: 58px;text-align: center;color:#FFFFFF;}
+.top-2{width: 70px;height: 58px;float:right;font-size:14px;line-height: 58px;padding-left:35px;color:#FFFFFF;}
+.view{width: 960px;height: 860px;margin:40px;padding-top:30px;}

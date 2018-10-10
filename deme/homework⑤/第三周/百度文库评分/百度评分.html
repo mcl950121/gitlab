@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+#rank{width:300px;margin:0 auto;height:30px}
+#rank ul{width:150px;height:22px;float:left;}
+#rank ul li{width:22px;heihgt:22px;float:left;cursor:pointer;background:url(img/x1.jpg) no-repeat;list-style:none;margin:0 2px;float:left;display:block;}
+
+#rank ul li.hover{width:22px;heihgt:22px;background:url(img/x2.jpg); no-repeat}
+#rank p{width:134px;height:28px;background:white;line-height:28px;text-align:center;font-size:14px;display:block;border:1px solid #ccc;color:#000;float:left;margin:0;padding:0;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('rank');
+	var aLi=oDiv.getElementsByTagName('li');
+	var oP=oDiv.getElementsByTagName('p')[0];
+	var arrText=['很差','较差','还行','推荐','力荐'];
+	var num=0;
+	
+	
+	
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].index=i;
+		aLi[i].onmouseover=function(){
+			oP.innerHTML=arrText[this.index];
+			
+			for(i=0;i<=this.index;i++){
+				aLi[i].className='hover';	
+			};
+		};
+			aLi[i].onmouseout=function(){
+			
+			for(i=0;i<aLi.length;i++){
+				aLi[i].className='';	
+			};
+		};
+	
+		
+		aLi[i].onclick=function(){
+			alert(arrText[this.index]);
+			/*oP.innerHTML=arrText[this.index];
+			for(i=0;i<=this.index;i++){
+				aLi[this.index].className='hover';	
+			};*/
+		};	
+	};
+	
+	
+	
+	
+	
+}
+</script>
+
+</head>
+
+<body>
+<div id="rank">
+	<ul>
+    	<li>　</li>
+        <li>　</li>
+        <li>　</li>
+        <li>　</li>
+        <li>　</li>
+	</ul>
+    <p></p>
+</div>
+</body>
+</html>

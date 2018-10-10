@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{list-style:none;margin:0;padding:0;}
+#pic{width:604px;height:auto;margin:0 auto;position:relative;cursor:pointer;}
+#pic span{width:604px;height:30px;display:block;background:#FFC;margin:0;padding:0;line-height:30px;text-align:center;}
+#pic p{width:604px;height:30px;display:block;background:#FFC;margin:0;padding:0;line-height:30px;text-align:center;}
+#pic img{display:block;margin:0;padding:0;}
+#pic ul{
+	position: absolute;
+	left: 241px;
+	top: 292px;
+}
+#pic ul li{float: left;font-size: 12px;margin-right: 2px;width: 20px;height: 20px;background: #e34;border-radius: 50%; background:rgba(255,0,0,.5);text-align:center;border: 1px solid #000;line-height:20px;} 
+#pic ul li:hover{background:red}
+#pic ul li.hover{background:red}
+</style>
+<script>
+window.onload=function(){
+	var oPic=document.getElementById('pic');
+	var oSpan=oPic.getElementsByTagName('span')[0];
+	var oP=oPic.getElementsByTagName('p')[0];
+	var oSpan=oPic.getElementsByTagName('span')[0];
+	var oImg=oPic.getElementsByTagName('img')[0];
+	var arrImg=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg'];
+	var arrText=['第一张','第二张','第三张','第四张','第五张'];
+	var oUl=oPic.getElementsByTagName('ul')[0];
+	var aLi=oUl.getElementsByTagName('li');
+	num=0;
+	
+	for(var i=0;i<arrImg.length;i++){
+		oUl.innerHTML+='<li>'+(i+1)+'</li>';
+		}
+	//初始化
+	function tab (){
+	oSpan.innerHTML=(num+1)+'/'+aLi.length;
+	oP.innerHTML=arrText[num];
+	oImg.src=arrImg[num];
+	for(var i=0;i<aLi.length;i++){
+				aLi[i].className='';
+			}
+				aLi[num].className='hover';
+	}
+	tab();
+	//鼠标点击
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].index=i;
+		aLi[i].onclick=function(){
+			num=this.index;
+			tab();
+		}
+	}
+	
+	//定时器
+	function play(){
+	timer=setInterval(function(){
+		num++;
+		if(num==aLi.length){
+			num=0;
+		}		
+			tab();
+	},600);
+	}
+	
+	oPic.onmousemove=function(){
+		clearInterval(timer);
+	};
+	oPic.onmouseout=function(){
+		play();
+	};
+		
+}
+</script>
+</head>
+
+<body>
+<div id="pic">
+<span></span>
+<img  src="img/1.jpg" />
+
+<p></p>
+<ul></ul>
+</div>
+</body>
+</html>

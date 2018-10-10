@@ -1,0 +1,74 @@
+<style>
+	.da1{width:300px;height:400px;margin-left:30px;border:1px solid #ccc;padding:10px;margin:0 auto;margin-top:10px;}
+	.da1 div{margin-top:5px;}
+	.da1 input{height:20px;margin-left:5px}
+	.ys{background-color:#eee;}
+	.back{background-color:#ccc;}
+	.bj{margin-top:10px}
+</style>
+<div ng-controller="edit">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 查找: <input type="text" ng-model="cha"  style="margin-bottom:10px"/> 
+	<table cellpadding="1" cellspacing="1" style="width: 1000px;height:auto;margin:0 auto;border: 1px solid #BDC1CA;">
+		<tr bgcolor="#f0725b" style="width:1000px;height:35px;font-size:22px;line-height:35px;text-align:center;color: #ffffff">
+			<td>编号</td>
+			<td>头像</td>
+			<td>姓名</td>
+			<td>性别</td>
+			<td>年龄</td>
+			<td>籍贯</td>
+			<td>电话</td>
+			<td>收入</td>
+			<td>就职公司</td>
+			<td style="width：150px">已面试公司</td>
+			<td>编辑</td>
+		</tr>
+		<tr ng-repeat="x in data | filter:cha" style="text-align: center;" ng-class-even="{'ys':true}" ng-class="{'back':i==$index}" ng-click="addback($index)">
+			<td>{{$index+1}}</td>
+			<td>
+			<img ng-src="http://123.56.227.177/1508a/public/upload/images/{{x.pic}}" width="25" height="25">
+			</td>
+			<td>{{x.name}}</td>
+			<td>{{x.sex}}</td>
+			<td>{{x.age}}</td>
+			<td>{{x.origin}}</td>
+			<td>{{x.tel}}</td>
+			<td>{{x.income}}</td>
+			<td>{{x.co}}</td>
+			<td>
+				<font ng-repeat="m in x.interviewCo">{{m.name}}</font>
+			</td>
+			<td>
+				<button style="border:none;width:25px;height:25px;background-image: url(img/bj.png);margin-right: 5px;" ng-click="edit(x)"></button>
+				<button style="border:none; width:25px;height:25px;background-image: url(img/sc.png);" ng-click="del(x)"></button></td>
+		</tr>
+	</table>
+	
+		<!--<div style="width:400px;height:300px;margin-left:30px;float:left" class="da">
+			<div>姓名:<input type="text" ng-model="updata.name"></div>
+			<div>性别:<input type="text" ng-model="updata.sex"></div>
+			<div>年龄：<input type="number" ng-model="updata.age"></div>
+			<div>籍贯：<input type="text" ng-model="updata.origin"></div>
+			<div>电话:<input type="number" ng-model="updata.tel"></div>
+			<div>收入:<input type="number" ng-model="updata.income"></div>
+			<div>就职公司:<input type="text" ng-model="updata.co"></div>
+			<div>已面试公司:<input type="text" ng-model="temdata.name"><button ng-click="add()">+</button></div>
+			<button ng-click="submit()">添加</button>	
+		</div>-->
+		
+		<div ng-show="isshow" class="da1">
+			<div ng-model="eddata.pic">头像:
+					<img ng-src="http://123.56.227.177/1508a/public/upload/images/{{eddata.pic}}" width="84" height="84">
+			</div>
+			<div>姓名:<input type="text" ng-model="eddata.name"></div>
+			<div>性别:<input type="text" ng-model="eddata.sex"></div>
+			<div>年龄：<input type="number" ng-model="eddata.age"></div>
+			<div>籍贯：<input type="text" ng-model="eddata.origin"></div>
+			<div>电话:<input type="number" ng-model="eddata.tel"></div>
+			<div>收入:<input type="number" ng-model="eddata.income"></div>
+			<div>就职公司:<input type="text" ng-model="eddata.co"></div>
+			<div>已面试公司:<div ng-repeat="y in eddata.interviewCo"><input type="text" ng-model="y.name"></div></div>
+			<button ng-click="save()" class="bj">编辑</button>	
+		</div>
+
+	
+</div>

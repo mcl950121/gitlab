@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+window.onload=function(){
+	
+	var oUl=document.getElementById('list');
+	var aLi=oUl.getElementsByTagName('li');
+	var aDiv=oUl.getElementsByTagName('div');
+	var aSpan=oUl.getElementsByTagName('span');
+	var timer=null;
+	
+	for(var i=0;i<aSpan.length;i++){
+		aSpan[i].index=i;
+		aSpan[i].onmouseover=function(){
+			clearTimeout(timer);
+			aDiv[this.index].style.display='block';
+			}
+		}
+	for(var i=0;i<aSpan.length;i++){
+		aSpan[i].index=i;
+		aSpan[i].onmouseout=function(){
+			timer=setTimeout(function (){
+				aDiv[this.index].style.display='none'
+			},300);
+			}
+		}
+			
+		
+	
+}
+</script>
+<style>
+*{margin:0;padding:0;list-style:none;}
+#list{width:520px;height:27px;background:url(bj.jpg);position:relative;padding:5px 0}
+#list li{float:left;display:block;float:left;line-height:27px;padding:0 22px;border-left:1px solid #c6d6e7;color:#FFF;}
+#list li:hover{background:#7b9cc6; border-radius:12px;cursor:pointer}
+div{display:none;color:#000;margin-top:10px;position:absolute;float:left;background:url(bj2.jpg);font-size:12px;width:257px;line-height:32px;text-align:center;padding:0 10px;};
+div:hover{text-decoration:underline;}
+span{display:block;}
+</style>
+</head>
+
+<body>
+<ul id="list">
+	<li><span>首页</span>
+    	<div>
+        	最近更新
+            最近更新
+            最近更新
+            最近更新
+        </div>
+    </li>
+    
+    <li><span>关于我们</span>
+    	<div>
+        	讲师培训
+            讲师培训
+            讲师培训
+            讲师培训
+        </div>
+    </li>
+    
+    <li><span>作品</span>
+    	<div>
+        	培训理念
+            培训理念
+            培训理念
+            培训理念
+        </div>
+    </li>
+    
+    <li><span>博客</span>
+    	<div>
+        	联系我们
+            联系我们
+            联系我们
+            联系我们
+        </div>
+    </li>
+</ul>
+</body>
+</html>

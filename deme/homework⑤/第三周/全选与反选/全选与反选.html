@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+window.onload=function(){
+	var aInput=document.getElementsByTagName('input');
+	
+	aInput[1].onclick=function(){
+		for(var i=2;i<aInput.length;i++){
+			aInput[0].checked=false;
+			aInput[i].checked=!aInput[i].checked;
+		};	
+	};
+	
+	aInput[0].onclick=function(){
+		for(var i=2;i<aInput.length;i++){
+			aInput[1].checked=false;
+			if(aInput[0].checked){
+				aInput[i].checked=true;
+				
+			}else if(!aInput[0].checked){
+				aInput[i].checked=false;
+				
+			};	
+		};	
+	};
+	
+};
+</script>
+</head>
+
+<body>
+<input type="checkbox" />全选
+<input type="checkbox" />反选
+
+<input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+</body>
+</html>

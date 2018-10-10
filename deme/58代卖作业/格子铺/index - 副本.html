@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+a{text-decoration:none;}
+.web{width:100%;height:1980px;}
+.div1{width:100%;height:45px;background:#fafafa;}
+.div1-1{width:1000px;height:45px;margin:0 auto;}
+.div1 p{float:left;font-size:15px;line-height:45px;font-family:"黑体";}
+.div1 span{float:left;}
+.span1{font-size:15px;line-height:45px;font-family:"黑体";margin-left:10px;color:#8f8f8f;}
+.span3{font-size:15px;line-height:45px;font-family:"黑体";margin-left:5px;}
+.span2,.span4,.span6{font-size:15px;line-height:45px;font-family:"黑体";margin-left:5px;color:#8f8f8f;}
+.span5{font-size:15px;line-height:45px;font-family:"黑体";margin-left:5px;color:#8f8f8f;}
+.span7{color:#e21210;font-size:15px;line-height:45px;font-family:"黑体";margin-left:5px;}
+.div2{height:20px;width:100%;}
+.div3{width:1000px;height:1900px;margin:0 auto;}
+.div3-1{width:185px;height:550px;float:left;}
+.div3-2{width:790px;height:1900px;float:left;margin-left:25px;}
+.div3one{height:120px;width:185px;border-top:1px solid #efefef;border-left:1px solid #efefef;border-right:1px solid #efefef;}
+.div3one-1{height:40px;}
+.div3one-2,.div3one-3{height:40px;background:#f7f7f7;}
+.span8{font-size:20px;font-family:"黑体";color:#e21210;line-height:40px;margin-left:10px;}
+.span9{font-size:15px;font-family:"黑体";color:#e21210;margin-top:15px;float:right;margin-right:1em;}
+.span10,.span12{font-size:15px;font-family:"微软雅黑";color:#636363;margin-left:30px;line-height:40px;}
+.span11,.span13{font-size:15px;font-family:"微软雅黑";color:#636363;line-height:40px;float:right;margin-right:1em;}
+.div3two{height:30px;width:185px;}
+.div3three{height:40px;width:185px;background:#e21210;text-align:center;}
+.div3three p{font-size:18px;color:white;line-height:40px;font-family:"微软雅黑";}
+.div3si,.div3wu,.div3liu{height:39px;width:183px;background:#f7f7f7;border-bottom:1px solid #eeeeee;border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;}
+.div3si div,.div3si p,.div3wu div,.div3wu p,.div3liu div,.div3liu p{float:left;line-height:39px;}
+.div3si div,.div3wu div,.div3liu div{width:25px;height:25px;background:#ba0e0e;margin-top:7px;}
+.div3si div p,.div3wu div p,.div3liu div p{color:white;line-height:25px;margin-left:10px;}
+.div3si p,.div3wu p,.div3liu p{font-size:12px;margin-left:1em;color:#787878;}
+
+.div3qi,.div3ba,.div3jiu,.div3shi,.div3shiyi,.div3shier{height:39px;width:183px;background:#f7f7f7;border-bottom:1px solid #eeeeee;border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;}
+.div3qi div,.div3qi p,.div3ba div,.div3ba p,.div3jiu div,.div3jiu p,.div3shi div,.div3shi p,.div3shiyi div,.div3shiyi p,.div3shier div,.div3shier p{float:left;line-height:39px;}
+.div3qi div,.div3ba div,.div3jiu div,.div3shi div,.div3shiyi div,.div3shier div{width:25px;height:25px;margin-top:7px;}
+.div3qi div p,.div3ba div p,.div3jiu div p,.div3shi div p,.div3shiyi div p,.div3shier div p{line-height:25px;margin-left:10px;}
+.div3qi p,.div3ba p,.div3jiu p,.div3shi p,.div3shiyi p,.div3shier p{font-size:12px;margin-left:1em;color:#787878;}
+.div3-2top{height:35px;width:790px;border-bottom:1px solid #f2f2f2;}
+.div3-2top p{font-size:23px;color:#e21210;font-family:"微软雅黑";line-height:35px;}
+.div3-2yi{width:790px;height:20px;}
+.div3-2er,.div3-2si,.div3-2liu{height:350px;width:790px;}
+.div3-2san,.div3-2wu,.div3-2qi{height:20px;width:790px;}
+.div3-2er1{width:180px;height:350px;border:1px solid #dcdcdc;float:left;}
+.div3-2er2{width:180px;height:350px;border:1px solid #dcdcdc;float:left;margin-left:20px;}
+.div3-2er1-1{width:180px;height:260px;}
+.div3-2er1-1 img{width:180px;height:260px;}
+.div3-2er1-2{width:180px;height:35px;border-bottom:1px solid #dcdcdc;text-align:center;}
+.div3-2er1-2 a{font-size:12px;color:#656565;line-height:35px;}
+.div3-2er1-2 a:hover{color:red;}
+.div3-2er1-3{height:50px;}
+.div3-2er1-3 p,.div3-2er1-3 span{float:left;font-family:"黑体";line-height:50px;font-size:14px;}
+.div3-2er1-3 p{margin-left:13px;color:red;}
+.div3-2span1{margin-left:50px;color:#fe9003;}
+.div4{width:100%;height:10px;}
+body{width:100%;font-family:"微软雅黑";font-size:12px;font-style:normal;}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+#header{width:100%; height:35px; background:#f6f6f6; font-size:12px;font-family:"微软雅黑"; border-bottom:1px solid #e5e5e5;}
+.top{width:1000px; height:35px; margin:0 auto; position:relative;}
+.top>img{width:15px; height:15px; margin-top:10px;float:left;}
+.top span{line-height:35px; color:#676767; float:left; margin-left:10px;}
+#our{margin-left:350px;float:left; }
+#our span{width:130px; height:35px;line-height:35px; color:#676767;float:left;}
+#our img{width:25px; height:25px; margin-top:5px; margin-left:10px;float:left;position:absolute;}
+#thr{line-height:35px; color:#676767;left:620px;position:absolute;}
+#thr s{width:0px; height:0px; border:4px solid #ccc; display:inline-block; margin-left:10px;border-color:#000 transparent #000; border-bottom:none;transition:transform .2s; position:absolute; top:13px;}
+.sanjiao{ width:25px; height:19px;  position:absolute; z-index:888; top:3px; left:55px; padding-top:13px; border:1px solid #ccc;border-bottom:0; background:#FFF; cursor:pointer;}
+
+
+
+
+#con{top:35px; left:600px;background:white;border:1px solid #ccc;width:100px;height:90px;position:absolute;display:none; z-index:80;}
+#con ul li{width:100px; height:30px; position:relative; display:block;}
+#con ul li img{width:13px; height:13px;float:left; top:5px;}
+#con ul li h{float:right; margin-right:20px; margin-top:10px;}
+#con ul li a{color:#999; text-decoration:none;}
+#con ul li a:hover{background:#999; color:#fff; display:block; width:100px; height:30px;}
+.li1{background:#999; color:#fff;}
+.mon{float:right; line-height:35px;color:#676767;position:absolute;left:710px;}
+.mon f{color:#F00;}
+.mon a{color:#676767; text-decoration:none;}
+.mon a:hover{color:#00F;}
+
+.logo{width:1000px; height:100px; margin: 0 auto; clear:both;}
+.mou{width:320px; height:100px; float:left;}
+.mou img{width:209px; height:75px; margin-top:5px; float:left;}
+.mou e{width:2px; height:40px; background:#666;display:block;float:left; margin-top:40px; margin-left:10px;}
+.mou span{float:right;font-size:15px; margin-top:45px; margin-right:15px; color:#333;}
+.kun{width:500px; height:100px;float:right;}
+.kun input{width:375px; height:36px; margin-top:20px; float:left; padding-left:5px;}
+.kun .sou{width:70px; height:39px; background:#cc0000;color:#fff; display:block; text-align:center; line-height:39px; float:left;margin-top:20px; margin-bottom:10px;}
+.kun p{clear:both; margin-top:10px; font-size:12px;}
+.kun p a{color:#676767; text-decoration:none;}
+.kun p a:hover{color:#00F;}
+
+.nav{width:100%;height:40px;margin:0 auto;background:#e21210;}
+.nav-in{width:1004px;height:40px;margin:0 auto;}
+.nav-in ul{width:1004px;height:40px;}
+.nav-in ul>li{position:relative;width:141px;height:40px;float:left;color:#fff;text-align:center;font-size:15px;text-align:center;line-height:40px; z-index:123456;}
+.nav-in ul>li a{background:#e21210;display:block;color:#fff}
+.nav-in ul>li a:hover{background:#bb0f0d;color:#fff}
+.nav-in ul li ul{width:140px;position:absolute;top:39px;left:0px;display:none;border:1px solid #bf1b19;height:auto}
+.nav-in ul li ul li a{width:140px;height:40px;line-height:40px;text-align:center;color:#666666;background:#fff;}
+.nav-in ul li ul li a:hover{color:red;background:#fff;}
+/*导航结束*/
+.qb{width:100%; height:2255px;}
+	.center{width:1000px;height:80px;margin:0 auto;border-bottom: 1px solid #dfdfdf;}
+	.center span{color:#e2120e;font-size:18px;line-height:80px;}
+	.center a{text-decoration:none;font-size:14px;color:#dfdfdf;}
+	.center-1{width:1000px;height:400px;margin:0 auto;}
+	.center-left{width:800px;height:192px;float:left;}
+	.center-left li{list-style:none;width:170px;height:170px;float:left;margin-right:20px;}
+	.center-left .cL{margin-right:0px;}
+	.center-left img{float:left;}
+	.center-left ul{float:left;margin-top:22px;}
+	.center-left ul li span{float:left;font-size:12px;color:#e2100f;line-height:30px;}
+	.center-left ul li b{float:left;font-size:12px;color:#676767;line-height:30px;margin-left:60px;}
+	.center-left ul li a{float:left;font-size:12px;color:#676767;text-decoration:none;}
+	.img-1{margin-top:22px;margin-right:5px;}
+	.img-2{margin-top:22px;margin-left:5px;}
+	.center-right{width:184px;height:170px;margin-top:22px;float:right;}
+	.center-right img{float:left;margin-bottom:5px;}
+	.center-right a{float:right;text-decoration:none;color:#666;font-size:12px;}
+	.cen-b img{float:left;margin-right:20px;}
+	.cen-b{width: 1000px;height: 105px;overflow:hidden;margin:10px auto;}
+	.cen-b div{float:left;}
+	.cen-b span{display:block;}
+	.cen-9 {width:1020px;height:105px;}
+	.cen-c{width:1000px;height:120px;float:left;}
+	.cenc-1{width:280px;height:110px;float:left;margin-top: 10px;margin-right:80px;}
+	.cenc-1 a{text-decoration:none;font-size:12px;color:#636363;float:left;line-height:26px;}
+	.cenc-1 span{text-decoration:none;font-size:12px;color:#cdcdcd;float:right;}
+	.cen-c #cenc-1{margin-right:0px;}
+	.tabL{width:1000px;height:404px;margin:0 auto;}
+	#box ul ul{z-index:123456789;width:125px;height:200px;display:none;position:absolute;}
+	#box ul li ul li{display:block;width:124px;height:40px;background:#e21210;border:1px solid 
+		#666;border-top:none;color:#fff;}
+	#box ul li ul li:hover{background:#fff;color:#e21210;}
+	.Lcen{width:1000px;height:350px;}
+	.Lcen div ul{width:1000px;height:350px;padding-top: 20px;}
+	.Lcen div ul li{width:185px;height:350px;float:left;margin-right:18px;}
+	.Lcen div ul .none{margin-right:0px;}
+	.Lcen div ul li span{font-size:12px;margin-left:10px;margin-right:50px;color:#e42220;line-height:40px;}
+	.Lcen div ul li b{font-size:12px;color:#ff9002;}
+	.Lcen div ul li a{text-decoration:none;font-size:12px;color:#676767;margin-left:10px;line-height:35px;}
+	.Lcen div{margin:0;padding:0;width:1000px;height:300px;border-top:1px solid #ccc;display:none;}
+	.Ltab{margin:0;padding:0;list-style:none;width:1000px;overflow:hidden;}
+	.Ltab li{float:left;width:100px;height:35px;background:#fff;color:#686868;text-align:center;line-height:35px;cursor:pointer;margin:0px 15px;font-size:14px;margin-top:22px;}
+	.Lcen .Lon{display:block;}
+	.Ltab li.Lcur{background:#e21210;color:#fff;}
+	.bom{width:100%;height:330px;background:#f9f9f9;margin-top:50px;}
+	.bom-1{width:1000px;height:295px;margin:0 auto;padding-top:35px;}
+	.footer{width:100%; height:328px; border-top:1px solid #dddddd; background:#f9f9f9; font-size:12px; float:left;font-size:12px; margin-top:30px;}
+.footer-1{width:100%;height:150px;  border-bottom:1px solid #dddddd;}
+.zh{width:1000px; height:150px; margin:0 auto;}
+.db1{width:153px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db1 img{width:25px; height:25px; float:left;}
+.ul1{width:87px; height:100px; line-height:25px; color:#676767; display:block; padding-left:10px; margin:0 auto;}
+.ul1 a{color:#666666; text-decoration:none;}
+.db2{width:242px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db2 img{width:25px; height:25px; float:left; margin-left:45px;}
+.ul2{width:126px; height:100px; line-height:25px; color:#676767; display:block; margin:0 auto;}
+.ul2 a{color:#666666; text-decoration:none;}
+.db3{width:213px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db3 img{width:25px; height:25px; float:left; margin-left:45px; margin-left:29px;}
+.ul3{width:103px; height:100px; line-height:25px; color:#676767; display:block; margin:0 auto;}
+.ul3 a{color:#666666; text-decoration:none;}
+.db4{width:234px; height:110px; display:block; float:left; border-right:1px solid #e6e6e6; margin-top:25px;}
+.db4 img{width:25px; height:25px; float:left; margin-left:40px;}
+.ul4{width:130px; height:100px; line-height:25px; color:#676767; display:block;margin:0 auto; }
+.ul4 a{color:#666666; text-decoration:none;}
+.db5{width:146px; height:110px; display:block; float:left; margin-top:25px;}
+.db5 img{width:25px; height:25px; float:left; margin-left:25px;}
+.ul5{width:87px; height:100px; line-height:25px; color:#676767; display:block; float:right;}
+.ul5 a{color:#666666; text-decoration:none;}
+.footer-2{width:100%;height:42px; border-bottom:1px solid #eaeaeb;}
+.footer-2 .footer-2f{width:1000px ;height:42px; margin:0 auto;}
+.footer-2f span{height:12px; line-height:12px; display:block;float:left;margin-top:15px;border-right:1px solid #e7e7e7;}
+.footer-2f span a{color:#666666; text-decoration:none;}
+.footer-2f span a:hover{text-decoration:none;}
+.footer-2f .span1{width:39px;text-align:left;}
+.footer-2f .span2{width:77px;}
+.footer-2f .span3{width:89px;}
+.footer-2f .span4{width:210px;}
+.footer-2f .span5{width:101px;}
+.footer-3{width:1000px; height:57px; margin:30px auto 0px;}
+.footer-3-1{width:504px;height:57px; float:left;}
+.footer-3-1 p{height:25px; line-height:25px;color:#666666;}
+.footer-3-2{width:240px;height:57px; float:left;}
+.left-1{width:59px;height:57px; float:left;margin-left:5px;color:#666666; text-align:center; }
+.left-2{width:59px;height:57px; float:left;color:#666666; text-align:center;}
+.footer-3-3{width:164px;height:57px; float:left; margin-left:15px;}
+.footer-3-3 img{display:block;width:37px;height:37px;float:left;}
+.footer-3-3 span{width:110px;height:37px; line-height:37px;float:left; margin-left:5px;color:#666666; font-size:14px;}
+/*尾部结束*/
+	.box2 div{ width:100%; height:320px; overflow:hidden; margin:0 auto; position:relative; margin-top:20px; z-index:-10;}
+.box2 ul{ position:absolute; left:50%; top:480px; line-height:18px;}
+.box2 ul li{ width:20px; height:20px; border-radius:50%; margin-left:5px; background:rgba(0,153,255,0.7); list-style:none; color:#fff; float:left; display:block; text-align:center; cursor:pointer;}
+.box2 ul li.hover{ background:rgba(255,153,153,0.9);}
+	
+	.fix{ width:100%; height:40px; background:#e21210; position:fixed; top:0; display:none;}
+.fix-in{width:1004px;height:40px;margin:0 auto;}
+.fix-in ul{width:1004px;height:40px;}
+.fix-in ul>li{position:relative;width:141px;height:40px;float:left;color:#fff;text-align:center;font-size:15px;text-align:center;line-height:40px;}
+.fix-in ul>li a{background:#e21210;display:block;color:#fff}
+.fix-in ul>li a:hover{background:#bb0f0d;color:#fff}
+.fix-in ul li ul{width:140px;position:absolute;top:39px;left:0px;display:none;border:1px solid #bf1b19;height:auto}
+.fix-in ul li ul li a{width:140px;height:40px;line-height:40px;text-align:center;color:#666666;background:#fff;}
+.fix-in ul li ul li a:hover{color:red;background:#fff;}
+
+.back{ width:50px; height:30px; position:fixed;  right:20px; bottom:20px; display:none; color:#fff; text-align:center; line-height:30px; cursor:pointer;}
+
+.s1.hover{
+	display: block;
+	position: absolute;
+	width: 28px;
+	height: 26px;
+	display: block;
+	border: 1px solid #e5e5e5;
+	border-bottom: 1px solid #fff;
+	
+	left: 66px;
+	top: 2px;
+	
+}
+.web{height:950px;width:100%;}
+.body2{height:950px;width:1000px;margin:0 auto;}
+.body1{height:20px;width:100%;}
+.body2yi{height:40px;background:#f7f7f7;border:1px solid #e9e9e9;}
+.body2yi p,.body2yi span,.body2yi input,.body2yi div{float:left;}
+.body2yi input{height:25px;width:45px;background:white;line-height:40px;border:1px solid #e9e9e9;margin-top:7px;margin-left:5px;}
+.body2yi div{width:45px;height:25px;background:#e21210;margin-top:7px;margin-left:50px;text-align:center;}
+.body2yi div a{color:white;font-size:12px;line-height:25px;}
+.body2yi p{margin-left:10px;color:#636363;margin-right:5px;line-height:40px;}
+.span1{margin-left:5px;line-height:40px;}
+.span2{margin-left:50px;color:#636363;line-height:40px;}
+.span3{margin-left:50px;color:#636363;line-height:40px;}
+.body2yi span{color:#636363;line-height:40px;}
+.body2san{width:775px;height:850px;float:left;}
+.body2er{width:100%;height:20px;}
+.body2you{float:left;width:205px;height:850px;margin-left:20px;}
+.banner{height:350px;width:775px;position:relative;border-bottom:1px solid #d0d0d0;}
+.banner span{height:300px;width:775px;overflow:hidden;display:block;}
+.banner span img{height:300px;width:775px;float:left;}
+.banner ul{width:150px;height:50px;position:relative;top:22px;left:655px;}
+.banner ul li{width:12px;height:12px;background:#d1d1d1;float:left;border-radius:50%;margin:0 3px;}
+.banner ul li.hover{background:#fc0702;}
+.hover{background:#fc0702;}
+.body2si-1{width:775px;height:20px;}
+.body2si-3{width:775px;height:30px;border-bottom:1px solid #d0d0d0;}
+.body2si-2{width:775px;height:88px;}
+.body2si-2 li{width:138px;height:88px;float:left;border:1px solid #d1d1d1;}
+.body2si-2 li img{width:138px;height:88px;}
+.li111{margin-left:18px;}
+.body2si-4{height:50px;width:775px;border-bottom:1px solid #d0d0d0;}
+.aaa1{font-size:12px;float:left;line-height:50px;color:#636363;}
+.aaa2{font-size:12px;float:left;line-height:50px;color:#636363;margin-left:47px;}
+.aaa3{font-size:12px;float:left;line-height:50px;color:#e31112;margin-left:47px;}
+.aaa4{font-size:12px;float:left;line-height:50px;color:#636363;margin-left:47px;}
+.body2si-5{width:775px;height:20px;}
+.body2si-7{width:775px;height:20px;}
+.body2si-6{width:775px;height:124px;}
+.body2si-6 a{float:left;}
+.body2si-6 a img{width:177px;height:124px;}
+.aaaa2,.aaaa3,.aaaa4{margin-left:21px;}
+.body2si-8{width:775px;height:70px;margin-top:10px}
+.body2si-9{width:775px;height:70px;margin-top:10px;}
+.body2si-8-1{width:123px;height:70px;text-align:center;float:left;}
+.body2si-8-1 img{width:123px;height:40px;}
+.body2si-8-1 p{font-size:12px;color:#636363;margin-top:6px;}
+.body2si-8-2{width:123px;height:70px;text-align:center;float:left;margin-left:40px;}
+.body2si-8-2 img{width:123px;height:40px;}
+.body2si-8-2 p{font-size:12px;color:#636363;margin-top:6px;}
+.you1{width:205px;height:30px;border-bottom:1px solid #e5e5e5;}
+.you1 h3{font-size:18px;font-family:"黑体";color:#e21212;float:left;line-height:30px;}
+.you1 span{float:left;margin-left:82px;}
+.you1 span a{font-size:14px;color:#636363;line-height:30px;}
+.you1 span a:hover{color:#e21212;}
+.you2{height:120px;width:205px;border-bottom:1px solid #e5e5e5;margin-top:8px;}
+.you2 a{font-size:12px;color:#636363;}
+.you3{width:205px;height:30px;border-bottom:1px solid #e5e5e5;margin-top:20px;}
+.you3 h3{font-size:18px;font-family:"黑体";color:#e21212;float:left;line-height:30px;}
+.you3 span{float:left;margin-left:82px;}
+.you3 span a{font-size:14px;color:#636363;line-height:30px;}
+.you3 span a:hover{color:#e21212;}
+.you4{width:205;height:135px;margin-top:26px;}
+.you4 img{width:205px;height:135px;}
+.hover{background:#fc0702;}
+
+	</style>
+</head>
+<script src="jq/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/lrtk - 副本.js"></script>
+<script src="js/index - 副本.js"></script>
+<script src="js/banner - 副本.js"></script>
+<script>
+ $(function(){
+     var ali=$('.banner ul li');
+	var aimg=$('.banner span img');
+	var timer=null;
+	var index=0;
+	ali.click(function(){
+		index=$(this).index();
+		aimg.eq(index).fadeIn().siblings().fadeOut();
+		ali.eq(index).addClass('hover').siblings().removeClass('hover');
+	});
+	
+	$('.banner span').hover(
+		function(){
+			clearInterval(timer)	
+		},function(){
+			timer=setInterval(function(){
+				index++;
+				if(index==ali.length){
+					index=0;
+				}
+				aimg.eq(index).fadeIn().siblings().fadeOut();
+				ali.eq(index).addClass('hover').siblings().removeClass('hover');
+			},1500)
+	}).trigger('mouseleave');  
+ })
+	</script>
+<body>
+	<div id="header">
+  <div class="top"> 
+   <img src="images/star.jpg" />
+   <span>收藏58代卖</span>
+   <div id="our">
+      <span>您好，欢迎来到58代卖</span>
+      <img src="images/pho.jpg" />
+      <div id="thr">xiangyun<div class="sanjiao"><s id="s1"></s></div></div>
+      <div id="con">
+        <ul>
+         <li><a href="#"><img src="images/she.jpg" /><h>个人设置</h></a></li>
+         <li class="li1"><img src="images/peo.jpg" /><h>我的账户</h></li>
+         <li><a href="#"><img src="images/up.jpg" /><h>退出登录</h></a></li>
+        </ul>
+      </div>
+   </div>
+ <div class="mon">可用云货币:<f>￥401.01</f> | <a href="#">关于我们</a> | <a href="#">联系我们</a></div>
+</div>
+</div>
+<div class="logo">
+   <div class="mou">
+      <img src="images/logo.jpg" />
+      <e></e>
+      <span>服务实体店<br/>的商务平台</span>
+   </div>
+  <div class="kun">
+    <input type="text" placeholder="请输入关键词" /><span class="sou">搜索</span>
+    <p>热门搜索:<a href="#">代卖优势</a> | <a href="#">成功案例</a> | <a href="#">创业秘籍</a> | <a href="#" style="color:#F00">商品大全</a></p>
+  </div>
+</div>
+<div class="nav">
+      <div class="nav-in">
+        <ul>
+          <li><a href="index.html">首页</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">产品大全</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">供应中心</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">分销中心</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">格子铺专区</a>
+          	<ul>
+            	<li><a href="#">格子铺介绍</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">操作流程</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">最新资讯</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</div>
+ <div class="fix">
+ 	<div class="nav-in">
+        <ul>
+          <li><a href="#">首页</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">产品大全</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">供应中心</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">分销中心</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">格子铺专区</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">操作流程</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#">最新资讯</a>
+          	<ul>
+            	<li><a href="#">最新活动</a></li>
+                <li><a href="#">官方公告</a></li>
+                <li><a href="#">热门文章</a></li>
+                <li><a href="#">官方信息</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+ </div>
+	
+    <div class="web">
+		<div class="body1"></div>
+		<div class="body2">
+			<div class="body2yi">
+				<p>起批价</p>
+				<input type="text">
+				<span class="span1">-</span>
+				<input type="text">
+				<span class="span2">所有产品</span>
+				<span>▼</span>
+				<span class="span3">不限</span>
+				<span>▼</span>
+				<div><a href="">搜索</a></div>
+			</div>
+			<div class="body2er"></div>
+			<div class="body2san">
+				<div class="banner">
+    				<span>
+    					<img src="img/113.jpg" alt="">
+    					<img src="img/111.jpg" alt="">
+    					<img src="img/112.jpg" alt="">
+    					<img src="img/114.jpg" alt="">
+    					<img src="img/115.jpg" alt="">
+    				</span>
+    				<ul>
+    					<li class="hover"></li>
+    					<li></li>
+    					<li></li>
+    					<li></li>
+    					<li></li>
+    				</ul>
+				</div>
+				<div class="body2si-1"></div>
+				<div class="body2si-2">
+					<ul>
+						<li><img src="images/产品大全_07.jpg" alt=""></li>
+						<li class="li111"><img src="images/产品大全_09.jpg" alt=""></li>
+						<li class="li111"><img src="images/产品大全_11.jpg" alt=""></li>
+						<li class="li111"><img src="images/产品大全_13.jpg" alt=""></li>
+						<li class="li111"><img src="images/产品大全_07.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="body2si-3"></div>
+				<div class="body2si-4">
+						<a class="aaa1" href="#">北京通州木木格子铺旺铺火爆招商</a>			
+						<a  class="aaa2" href="#">【加盟必选】租格寄售哪家强</a>
+						<a class="aaa3" href="#">【招租】北京九方格格子铺</a>
+						<a  class="aaa4" href="#">成都玉林东路 时米格 格子铺</a>
+				</div>
+				<div class="body2si-5"></div>
+				<div class="body2si-6">
+					<a class="aaaa1" href=""><img src="images/产品大全_24.jpg" alt=""></a>
+					<a class="aaaa2"  href=""><img src="images/产品大全_28.jpg" alt=""></a>
+					<a class="aaaa3"  href=""><img src="images/产品大全_24.jpg" alt=""></a>
+					<a class="aaaa4" href=""><img src="images/产品大全_28.jpg" alt=""></a>
+				</div>
+				<div class="body2si-7"></div>
+				<div class="body2si-8">
+					<div class="body2si-8-1">
+						<img src="images/产品大全_35.jpg" alt="">
+						<p>晶坤水晶制品有限公司</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_56.jpg" alt="">
+						<p>愚翁的智慧</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_39.jpg" alt="">
+						<p>凌动200</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_41.jpg" alt="">
+						<p>凝翠坊</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_44.jpg" alt="">
+						<p>天伦电器</p>
+					</div>
+				</div>
+				<div class="body2si-9">
+					<div class="body2si-8-1">
+						<img src="images/产品大全_45.jpg" alt="">
+						<p>锦绣伊</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_56.jpg" alt="">
+						<p>旺运宝贝</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_39.jpg" alt="">
+						<p>浪漫宝贝</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_41.jpg" alt="">
+						<p>科沃斯旗舰店</p>
+					</div>
+					<div class="body2si-8-2">
+						<img src="images/产品大全_60.jpg" alt="">
+						<p>喜鹊鸣</p>
+					</div>
+				</div>					
+			</div>
+			<div class="body2you">
+				<div class="you1">
+					<h3>官方公告</h3>
+					<span><a href="">更多>></a></span>
+				</div>
+				<div class="you2">
+					<a href="">关于供应商的一些说明...</a></br></br>
+					<a href="">致58代卖新会员的一封信...</a></br></br>
+					<a href="">58代卖预售现在开始火爆开启</a></br></br>
+					<a href="">58代卖网站最近怎么没有招商</a>
+				</div>
+				<div class="you3">
+					<h3>推荐产品</h3>
+					<span><a href="">更多>></a></span>
+				</div>
+				<div class="you4">
+					<img src="images/产品大全_03.jpg" alt="">
+				</div>
+				<div class="you4">
+					<img src="images/产品大全_17.jpg" alt="">
+				</div>
+				<div class="you4">
+					<img src="images/产品大全_30.jpg" alt="">
+				</div>
+				<div class="you4">
+					<img src="images/产品大全_45.jpg" alt="">
+				</div>
+			</div>
+		</div>
+    
+    
+    
+    
+ 
+  
+
+<div class="footer">
+  <div class="footer-1">
+   <div class="zh">
+      <span class="db1">
+         <img src="images/foot1.png"/>
+         <ul class="ul1">
+           <li><font size="2"><b>新手指南</b></font></li>
+           <li><a href="#">操作指南</a></li>
+           <li><a href="#">免费注册</a></li>
+           <li><a href="#">热门问题</a></li>
+         </ul>
+      </span>
+      <span class="db2">
+         <img src="images/foot2.png"/>
+         <ul class="ul2">
+           <li><font size="2"><b>供应指南</b></font></li>
+           <li><a href="#">设置店铺</a></li>
+           <li><a href="#">添加商品</a></li>
+           <li><a href="#">销售发货</a></li>
+         </ul>
+      </span>
+      <span class="db3">
+         <img src="images/foot3.png"/>
+         <ul class="ul3">
+         <li><font size="2"><b>分销指南</b></font></li>
+         <li><a href="#">选货下单</a></li>
+         <li><a href="#">支付货款</a></li>
+         <li><a href="#">开始代卖</a></li>
+         </ul>
+      </span>
+      <span class="db4">
+         <img src="images/foot4.png"/>
+         <ul class="ul4">
+         <li><font size="2"><b>支付与提现</b></font></li>
+         <li><a href="#">提现方式</a></li>
+         <li><a href="#">充值说明</a></li>
+         <li><a href="#">支付方式</a></li>
+         </ul>
+      </span>
+      <span class="db5">
+         <img src="images/foot4.png"/>
+         <ul class="ul5">
+         <li><b>会员说明</b></li>
+         <li><a href="#">供应商</a></li>
+         <li><a href="#">分销商</a></li>
+         <li><a href="#">有问必答</a></li>
+         </ul>
+      </span>
+
+
+   </div>
+  
+  </div>
+  <div class="footer-2">
+    <div class="footer-2f">
+      <span class="span1" style="border-left:none;"><a href="#">首页</a></span>
+      <span class="span2"><a href="#">产品大全</a></span>
+      <span class="span2"><a href="#">供应中心</a></span>
+      <span class="span2"><a href="#">分销中心</a></span>
+      <span class="span3"><a href="#">格子铺专区</a></span>
+      <span class="span2" style="border:none;"><a href="#">最新资讯</a></span>
+      <span class="span4"><a href="#">代卖供货:分销商代卖操作方法</a></span>
+      
+    </div>
+  </div>
+  <div class="footer-3">
+    <div class="footer-3-1">
+      <p>Copyright@2013xiangyunshangwu.com  All Rights Reserved 58代卖版权所有</p>
+      <p>ICP证:京ICP备13019928号</p>
+    </div>
+    <div class="footer-3-2">
+      <div class="left-1">
+      <img src="images/foot6.png" width="37" height="37" /><br/>卖家保证
+      </div>
+      <div class="left-1">
+      <img src="images/foot7.png" width="37" height="37" /><br/>商家认证
+      </div>
+       <div class="left-2">
+      <img src="images/foot8.png" width="37" height="37" /><br/>安全交易
+      </div>
+    </div>
+    <div class="footer-3-3">
+      <img src="images/dianhua.png" width="37" height="37" /><span>010-88333615</span>
+    </div>
+  </div>
+</div>
+
+
+   <div class="back"><img src="images/jt01.png" /></div>
+</body>
+</html>

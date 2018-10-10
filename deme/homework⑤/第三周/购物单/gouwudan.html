@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+#list{list-style:none;}
+s,b{text-decoration:none;}
+#div{width:100px;height:50px;color:red;border:1px solid black;font-size:14px;line-height:50px;text-align:center;}
+</style>
+<script>
+window.onload=function(){
+	var oUl=document.getElementById('list');
+	var aLi=oUl.getElementsByTagName('li');
+	var oDiv=document.getElementById('div');
+	
+	for(i=0;i<aLi.length;i++){
+		pro(aLi[i]);
+	}
+	
+	function pro(aLix){
+	var aInput=aLix.getElementsByTagName('input');
+	var oSpan=aLix.getElementsByTagName('span')[0];
+	var oS=aLix.getElementsByTagName('s')[0];
+	var oB=aLix.getElementsByTagName('b')[0];
+	var oN1=Number(oSpan.innerHTML);
+	var oN2=parseFloat(oS.innerHTML);
+	
+	aInput[0].onclick=function(){
+		oN1--;
+		if(oN1<=0){
+			oN1=0;
+		}
+		oSpan.innerHTML=oN1;
+		oB.innerHTML=oN1*oN2+'元';
+	}
+	
+	aInput[1].onclick=function(){
+		oN1++;
+		oSpan.innerHTML=oN1;
+		oB.innerHTML=oN1*oN2+'元';
+	}
+	
+//	oDiv.onclick=function(){
+//		this.index=i;
+//		for(i=0;i<aLi.length;i++){
+//			oDiv.inner.HTML=oB[this.index].inner.HTML
+//			
+//		}
+//	}
+}
+}
+</script>
+</head>
+
+<body>
+<ul id="list">
+	<li>
+    	<input type="button" value="-" />
+        <span>0</span>个
+        <input type="button" value="+" />
+        单价：<s>6.6元</s>
+        小计：<b>0元</b>
+    </li>
+    
+    <li>
+    	<input type="button" value="-" />
+        <span>0</span>个
+        <input type="button" value="+" />
+        单价：<s>7.7元</s>
+        小计：<b>0元</b>
+    </li>
+    
+    <li>
+    	<input type="button" value="-" />
+        <span>0</span>个
+        <input type="button" value="+" />
+        单价：<s>8.8元</s>
+        小计：<b>0元</b>
+    </li>
+    
+    <li>
+    	<input type="button" value="-" />
+        <span>0</span>个
+        <input type="button" value="+" />
+        单价：<s>9.9元</s>
+        小计：<b>0元</b>
+    </li>
+    
+    <li>
+    	<input type="button" value="-" />
+        <span>0</span>个
+        <input type="button" value="+" />
+        单价：<s>10元</s>
+        小计：<b>0元</b>
+    </li>
+
+</ul>
+<div id="div"></div>
+</body>
+</html>

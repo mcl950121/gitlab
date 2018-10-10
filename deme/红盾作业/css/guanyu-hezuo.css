@@ -1,0 +1,50 @@
+/* CSS Document */
+body{margin:0px;padding:0px;font-family:"微软雅黑","黑体";font-size:12px;}
+*{margin:0px;padding:0px}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.huabu{width:100%;height:1087px;background-image:url(../images/bj-gy-hz.jpg);background-repeat:repeat-x;}
+.nav{width:1170px;height:76px;margin:0 auto;}
+.logo{width:300px;height:76px;float:left}
+#mul{width:870px;height:76px;float:left;position:relative;background-color:#FFF; cursor:pointer;}
+#mul li{float:left;width:144px;height:76px;text-align:center;line-height:76px;border-left:1px solid #d1d1d1;color:#a71606;background-color:#FFF;}
+#mul li a{width:144px;height:76px;text-align:center;line-height:76px;border-left:1px solid #d1d1d1;color:#a71606;background-color:#fff;display:block}
+#mul li a:hover{float:left;width:144px;height:76px;text-align:center;line-height:76px;border-left:1px solid #d1d1d1;color:#fff;background-color:#a71606;display:block;padding:0}
+#mol{width:144px;height:0px;overflow:hidden;border:0px;}
+#mol li{width:144px;height:35px;line-height:35px;text-align:center;background-color:#FFF;border:0px}
+#mol li a{width:144px;height:35px;line-height:35px;text-align:center;background-color:#a71606;color:#fff;display:block;border:0px}
+#mol li a:hover{width:144px;height:35px;line-height:35px;text-align:center;background-color:#fff;color:#a71606;border:0px}
+
+
+.guanyu{width:1170px;height:75px;margin:30px auto auto auto;line-height:75px;font-size:21px;color:#353535;}
+.guanyu-1{width:1170px;height:40px;line-height:40px;margin:0 auto;color:#b2b2b2;}
+.guanyu-1 b{color:#a71606;font-weight:normal}
+
+.guanyu-2{width:1170px;height:805px;margin:0 auto;}
+.guanyu-3{width:850px;height:805px;float:left}
+.guanyu-4{width:285px;height:800px;float:left}
+.guanyu-4 img{width:240px;heihgt:120px;margin-top:40px; cursor:pointer;}
+.guanyu-55{width:250px;height:800px;float:left; }
+.guanyu-5{width:250px;height:520px;}
+.guanyu-5 img{width:240px;heihgt:120px;margin-top:40px;cursor:pointer}
+.guanyu-6{width:67px;heihgt:30px;margin-left:85px;}
+
+.gy{width:320px;height:805px;float:left}
+.gy-1{width:320px;height:40px;line-height:40px;font-size:21px;color:#353535;margin-top:40px;}
+.gy-2{width:320px;height:300px;}
+.gy-2 li{width:320px;height:50px;margin-top:20px; font-style:normal}
+.gy-2 li a{display:inline-block;width:320px; height:50px;}
+.gy-2 li a i{display:inline-block; width:50px; height:50px; background-color:#d1d1d1; font-size:36px; text-align:center; line-height:50px; color:#fff; float:left;font-style:normal}
+.gy-2 li a:hover i{background-color:#a71606;color:#fff;}
+.gy-2 li a em{display:inline-block;height:48px; width:223px;  float:right; text-align:center; line-height:48px; font-size:20px;color:#666;border:1px solid #d1d1d1;font-style:normal}
+.gy-2 li a:hover em{ border:1px solid #a71606;color:#a71606;}
+.gy-2 .li-i a i{display:inline-block; width:50px; height:50px; background-color:#a71606; font-size:36px; text-align:center; line-height:50px; color:#fff; z-index:99999;}
+.gy-2 .li-i a em{border:1px solid #a71606;color:#a71606;}
+.gy-3{width:320px;height:330px}
+.gy-3 img{width:318px;height:156px;border:1px solid #ccc;margin-top:10px;cursor:pointer}
+.gy-3 p{color:#b2b2b2;line-height:24px;margin-top:20px;}
+
+.weibu{width:1170px;height:60px;line-height:60px;text-align:center;color:#4f4f4f;margin:0 auto}
