@@ -1,0 +1,121 @@
+Npm 1) Ô¶³Ì²Ö¿âÏà¹ØÃüÁî
+¼ì³ö²Ö¿â£º$ git clone git://github.com/jquery/jquery.git
+²é¿´Ô¶³Ì²Ö¿â£º$ git remote -v
+Ìí¼ÓÔ¶³Ì²Ö¿â£º$ git remote add [name] [url]
+É¾³ıÔ¶³Ì²Ö¿â£º$ git remote rm [name]
+ĞŞ¸ÄÔ¶³Ì²Ö¿â£º$ git remote set-url --push[name][newUrl]
+À­È¡Ô¶³Ì²Ö¿â£º$ git pull [remoteName] [localBranchName]
+ÍÆËÍÔ¶³Ì²Ö¿â£º$ git push [remoteName] [localBranchName]
+ 
+2£©·ÖÖ§(branch)²Ù×÷Ïà¹ØÃüÁî
+
+²é¿´¸üĞÂ·ÖÖ§£¨À­È¡Ô¶³Ì·ÖÖ§£©   git fetch
+²é¿´¸üĞÂ·ÖÖ§£¨Í¬²½Ô¶³Ì·ÖÖ§£©   git fetch -p
+¸üĞÂ·ÖÖ§       git pull£¨È¡»ØÔ¶³ÌÖ÷»úÄ³¸ö·ÖÖ§µÄ¸üĞÂ£¬ÔÙÓë±¾µØµÄÖ¸¶¨·ÖÖ§ºÏ²¢¡££©
+git pull origin developer (¸üĞÂÖ¸¶¨·ÖÖ§)
+²é¿´ĞŞ¸ÄÄÚÈİ   git status
+²éÕÒÖ¸¶¨ÄÚÈİ   git grep ÿ
+Ìí¼ÓÄÚÈİ     git add .
+Ìí¼ÓÄÚÈİ£¨Ö»Ìí¼ÓĞÂÔöµÄÄÚÈİ£© git -u
+
+²é¿´±¾µØ·ÖÖ§£º$ git branch
+²é¿´Ô¶³Ì·ÖÖ§£º$ git branch -r
+´´½¨±¾µØ·ÖÖ§£º$ git branch [name] ----×¢ÒâĞÂ·ÖÖ§´´½¨ºó²»»á×Ô¶¯ÇĞ»»Îªµ±Ç°·ÖÖ§
+ÇĞ»»·ÖÖ§£º$ git checkout [name]
+´´½¨ĞÂ·ÖÖ§²¢Á¢¼´ÇĞ»»µ½ĞÂ·ÖÖ§£º$ git checkout -b [name]
+É¾³ı·ÖÖ§£º$ git branch -d [name] ---- -dÑ¡ÏîÖ»ÄÜÉ¾³ıÒÑ¾­²ÎÓëÁËºÏ²¢µÄ·ÖÖ§£¬¶ÔÓÚÎ´ÓĞºÏ²¢µÄ·ÖÖ§ÊÇÎŞ·¨É¾³ıµÄ¡£Èç¹ûÏëÇ¿ÖÆÉ¾³ıÒ»¸ö·ÖÖ§£¬¿ÉÒÔÊ¹ÓÃ-DÑ¡Ïî
+ºÏ²¢·ÖÖ§£º$ git merge [name] ----½«Ãû³ÆÎª[name]µÄ·ÖÖ§Óëµ±Ç°·ÖÖ§ºÏ²¢
+´´½¨Ô¶³Ì·ÖÖ§(±¾µØ·ÖÖ§pushµ½Ô¶³Ì)£º$ git push origin [name]
+É¾³ıÔ¶³Ì·ÖÖ§£º$ git push origin :heads/[name]
+ÎÒ´Ómaster·ÖÖ§´´½¨ÁËÒ»¸öissue5560·ÖÖ§£¬×öÁËÒ»Ğ©ĞŞ¸Äºó£¬Ê¹ÓÃgit push origin masterÌá½»£¬µ«ÊÇÏÔÊ¾µÄ½á¹ûÈ´ÊÇ'Everything up-to-date'£¬·¢ÉúÎÊÌâµÄÔ­ÒòÊÇgit push origin master ÔÚÃ»ÓĞtrackÔ¶³Ì·ÖÖ§µÄ±¾µØ·ÖÖ§ÖĞÄ¬ÈÏÌá½»µÄmaster·ÖÖ§£¬ÒòÎªmaster·ÖÖ§Ä¬ÈÏÖ¸ÏòÁËorigin master ·ÖÖ§£¬ÕâÀïÒªÊ¹ÓÃgit push origin issue5560£ºmaster ¾Í¿ÉÒÔ°Ñissue5560ÍÆËÍµ½Ô¶³ÌµÄmaster·ÖÖ§ÁË¡£
+
+    Èç¹ûÏë °Ñ±¾µØµÄÄ³¸ö·ÖÖ§testÌá½»µ½Ô¶³Ì²Ö¿â£¬²¢×÷ÎªÔ¶³Ì²Ö¿âµÄmaster·ÖÖ§£¬»òÕß×÷ÎªÁíÍâÒ»¸öÃû½ĞtestµÄ·ÖÖ§£¬ÄÇÃ´¿ÉÒÔÕâÃ´×ö¡£
+
+$ git push origin test:master         // Ìá½»±¾µØtest·ÖÖ§×÷ÎªÔ¶³ÌµÄmaster·ÖÖ§ //ºÃÏñÖ»Ğ´ÕâÒ»¾ä£¬Ô¶³ÌµÄgithub¾Í»á×Ô¶¯´´½¨Ò»¸ötest·ÖÖ§
+$ git push origin test:test              // Ìá½»±¾µØtest·ÖÖ§×÷ÎªÔ¶³ÌµÄtest·ÖÖ§
+
+Èç¹ûÏëÉ¾³ıÔ¶³ÌµÄ·ÖÖ§ÄØ£¿ÀàËÆÓÚÉÏÃæ£¬Èç¹û:×ó±ßµÄ·ÖÖ§Îª¿Õ£¬ÄÇÃ´½«É¾³ı:ÓÒ±ßµÄÔ¶³ÌµÄ·ÖÖ§¡£
+
+$ git push origin :test              // ¸ÕÌá½»µ½Ô¶³ÌµÄtest½«±»É¾³ı£¬µ«ÊÇ±¾µØ»¹»á±£´æµÄ£¬²»ÓÃµ£ĞÄ
+3£©°æ±¾(tag)²Ù×÷Ïà¹ØÃüÁî
+²é¿´°æ±¾£º$ git tag
+´´½¨°æ±¾£º$ git tag [name]
+É¾³ı°æ±¾£º$ git tag -d [name]
+²é¿´Ô¶³Ì°æ±¾£º$ git tag -r
+´´½¨Ô¶³Ì°æ±¾(±¾µØ°æ±¾pushµ½Ô¶³Ì)£º$ git push origin [name]
+É¾³ıÔ¶³Ì°æ±¾£º$ git push origin :refs/tags/[name]
+ 
+4) ×ÓÄ£¿é(submodule)Ïà¹Ø²Ù×÷ÃüÁî
+Ìí¼Ó×ÓÄ£¿é£º$ git submodule add [url] [path]
+Èç£º$ git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
+³õÊ¼»¯×ÓÄ£¿é£º$ git submodule init ----Ö»ÔÚÊ×´Î¼ì³ö²Ö¿âÊ±ÔËĞĞÒ»´Î¾ÍĞĞ
+¸üĞÂ×ÓÄ£¿é£º$ git submodule update ----Ã¿´Î¸üĞÂ»òÇĞ»»·ÖÖ§ºó¶¼ĞèÒªÔËĞĞÒ»ÏÂ
+É¾³ı×ÓÄ£¿é£º£¨·Ö4²½×ßÅ¶£©
+1)$ git rm --cached [path]
+2) ±à¼­¡°.gitmodules¡±ÎÄ¼ş£¬½«×ÓÄ£¿éµÄÏà¹ØÅäÖÃ½ÚµãÉ¾³ıµô
+3) ±à¼­¡°.git/config¡±ÎÄ¼ş£¬½«×ÓÄ£¿éµÄÏà¹ØÅäÖÃ½ÚµãÉ¾³ıµô
+4) ÊÖ¶¯É¾³ı×ÓÄ£¿é²ĞÁôµÄÄ¿Â¼
+ 
+5£©ºöÂÔÒ»Ğ©ÎÄ¼ş¡¢ÎÄ¼ş¼Ğ²»Ìá½»
+ÔÚ²Ö¿â¸ùÄ¿Â¼ÏÂ´´½¨Ãû³ÆÎª¡°.gitignore¡±µÄÎÄ¼ş£¬Ğ´Èë²»ĞèÒªµÄÎÄ¼ş¼ĞÃû»òÎÄ¼ş£¬Ã¿¸öÔªËØÕ¼Ò»ĞĞ¼´¿É£¬Èç
+target
+bin
+*.db
+ 
+2. git pull£ºÏàµ±ÓÚÊÇ´ÓÔ¶³Ì»ñÈ¡×îĞÂ°æ±¾²¢mergeµ½±¾µØ
+git pull origin master
+
+
+
+ĞŞ¸Äbug²Ù×÷
+git status 
+git diff ²é¿´ĞŞ¸ÄÄÚÈİ
+
+git checkout -b fix_bug ĞÂ½¨ĞŞ¸Ä·ÖÖ§²¢ÇĞ»»
+Ö´ĞĞĞŞ¸Ä²Ù×÷£¬Ö±ÖÁÍê³É¡£
+git add -u Ìí¼ÓĞŞ¸ÄÄÚÈİ
+git status ²é¿´ĞŞ¸ÄÄÚÈİ
+git commit -m ¡®fix¡¯ Ìí¼Ó×¢ÊÍ
+git push origin fix_bug  ´´½¨Ô¶³Ì·ÖÖ§²¢Ìí¼ÓÄÚÈİ
+µ½Ô¶³Ì²Ù×÷ ĞŞ¸Ä·ÖÖ§µ½developer·ÖÖ§ÏÂ¡£
+git fetch -p origin ¸üĞÂ·ÖÖ§
+git merge origin/developer ±È½Ï·ÖÖ§
+
+<admin
+    username="admin_mcl"
+    nickname="Ma Chen Liang"
+    role="supervisor"
+    password_digest="machenliang">
+    <hospital name="Ìì½òÊĞÎäÇåÇøÈËÃñÒ½Ôº" />
+  </admin>
+
+  <admin
+    username="admin_machenliang"
+    nickname="Ma Chen Liang"
+    role="hospital_user"
+    password_digest="machenliang">
+    <hospital name="Ìì½òÊĞÎäÇåÇøÈËÃñÒ½Ôº" />
+  </admin>
+
+mgmt.doctorfm.top
+institution.doctorfm.top
+agent.doctorfm.top
+
+»ú¹¹¶Ë£ºt-institution.doctorfm.net
+¹ÜÀí¶Ë£ºt-mgmt.doctorfm.net
+´úÀí¶Ë£ºt-agent.doctorfm.net
+³¬¼¶¹ÜÀíÔ±   root    adminadmin
+
+~/Documents/subject_deployment/docker/subject_api
+docker-compose -f docker-compose.localdeploy.yml up -d
+docker-compose -f docker-compose.localdeploy.yml down
+docker-compose -f docker-compose.localdeploy.yml pull
+docker ps -a
+docker images
+
+tail -f log/staging.log  ²é¿´½ø³Ì
+
+°²×°ÍêÒÀÀµ°ü¼ÇÂ¼ÔÚpackage.json(bower.json)ÖĞ:
+npm install jquery --save
+bower install jquery --save
+
